@@ -15,8 +15,8 @@
       <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
     </a>
     <div class="who">
-      Signed in as <strong>Jeff Clause</strong> (FMO staff)<br>
-      <a href="index.html">Log out</a>
+      Signed in as <strong>Jeff Clause</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="index.html">Log out</a>
     </div>
   </div>
 </header>
@@ -36,6 +36,13 @@
     <p>Welcome back, Jeff. Pick a task below.</p>
   </div>
 
+  <div class="note">
+    The FMIS uses role-based access. Every signed-in staff member can request, change
+    and cancel their own office moves, log maintenance calls and view floor plans. FMO
+    staff can also manage furniture and building records, schedule moves and generate
+    the FMO asset report. You are signed in as FMO staff, so you can see both sets of tasks.
+  </div>
+
   <div class="panel">
     <h2>My move requests</h2>
     <table class="data">
@@ -44,12 +51,12 @@
       </thead>
       <tbody>
         <tr>
-          <td>MV-2041</td><td>190</td><td>129E</td><td>-</td>
+          <td>204118</td><td>190</td><td>129E</td><td>-</td>
           <td><span class="pill requested">Requested</span></td>
           <td><a href="cancel-move.html">View / cancel</a></td>
         </tr>
         <tr>
-          <td>MV-2033</td><td>129G</td><td>205B</td><td>12/09/2026</td>
+          <td>203301</td><td>129G</td><td>205B</td><td>12/09/2026</td>
           <td><span class="pill scheduled">Scheduled</span></td>
           <td><a href="cancel-move.html">View</a></td>
         </tr>
@@ -57,8 +64,22 @@
     </table>
   </div>
 
-  <h2>FMO tasks</h2>
+  <h2>Tasks for all staff</h2>
   <div class="grid-2">
+    <a class="card" href="cancel-move.html">
+      <h3>Cancel move request</h3>
+      <p>Open one of your own move requests and cancel it.</p>
+      <span class="tag">Staff member</span>
+    </a>
+    <div class="card" style="opacity:0.6;cursor:default;">
+      <h3>View floor plans</h3>
+      <p>Look at a building floor plan one floor at a time, with room sizes in square metres.</p>
+      <span class="tag">Staff member</span>
+    </div>
+  </div>
+
+  <h2>FMO staff only</h2>
+  <div class="grid-3">
     <a class="card" href="report.html">
       <h3>Generate FMO asset report</h3>
       <p>Choose a building and floor and view occupants, room sizes and furniture values.</p>
@@ -73,11 +94,6 @@
       <h3>Schedule move</h3>
       <p>Review a submitted request and set a move date to schedule it.</p>
       <span class="tag">FMO staff</span>
-    </a>
-    <a class="card" href="cancel-move.html">
-      <h3>Cancel move request</h3>
-      <p>Open one of your own requests and cancel it.</p>
-      <span class="tag">Staff member</span>
     </a>
   </div>
 </div>

@@ -15,8 +15,8 @@
       <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
     </a>
     <div class="who">
-      Signed in as <strong>Thisum Thewmika</strong> (FMO staff)<br>
-      <a href="index.html">Log out</a>
+      Signed in as <strong>Thisum Thewmika</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="index.html">Log out</a>
     </div>
   </div>
 </header>
@@ -103,6 +103,16 @@
             <option>128A - Science - Laboratory Facilities</option>
           </select>
         </div>
+      </div>
+
+      <div class="field">
+        <label for="status">Asset status</label>
+        <select id="status" name="status">
+          <option selected>Active</option>
+          <option>Beyond repair</option>
+          <option>Sold</option>
+        </select>
+        <span class="hint">New records start as Active. Beyond repair and Sold are set later.</span>
       </div>
 
       <div class="btn-row">
