@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FMO asset report - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Desandu Hettiarachchi</strong> (FMO staff)<br>
+      <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / FMO asset report</div>
+  <div class="page-head">
+    <h1>Generate FMO asset report</h1>
+    <p>Pick a campus, building and floor, then view the report of occupants and furniture for each room on that floor.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Report options</h2>
+    <form id="report-picker">
+      <div class="form-row">
+        <div class="field">
+          <label for="campus">Campus</label>
+          <select id="campus" name="campus">
+            <option selected>Joondalup</option>
+            <option>Mount Lawley</option>
+            <option>South West (Bunbury)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="building">Building <span class="hint">(two-digit ID and name)</span></label>
+          <select id="building" name="building">
+            <option selected>19 - Science</option>
+            <option>02 - Chancellery</option>
+            <option>34 - Library</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="floor">Floor number</label>
+          <select id="floor" name="floor">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="asof">Report date</label>
+          <input type="date" id="asof" name="asof" value="2026-06-23">
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">View report</button>
+        <button type="button" class="btn secondary" onclick="window.print()">Print</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="report-output" class="report">
+    <div class="report-title"><h2 style="margin:0;">FMO Asset Report</h2></div>
+
+    <div class="meta">
+      <span>Report Date</span><span>: 23/06/2026</span>
+      <span>Campus</span><span>: Joondalup</span>
+      <span>Building</span><span>: 19 - Science</span>
+      <span>Floor</span><span>: 1</span>
+      <span>Drawing name</span><span>: JO_19_1.dwg</span>
+    </div>
+
+    <!-- Room 129G -->
+    <div class="room-block">
+      <div class="room-head">
+        <span>Room&nbsp;&nbsp;&nbsp;&nbsp;: 129G</span><span>Space Type&nbsp;&nbsp;: Office</span>
+        <span>Occupying Dept : Science</span><span>Space Code&nbsp;&nbsp;: 101</span>
+        <span>Occupant : Jeff Clause</span><span>UFA&nbsp;&nbsp;: 10 sqm.</span>
+      </div>
+      <table class="data">
+        <thead><tr><th>#</th><th>Barcode</th><th>Description</th><th>Acquisition date</th><th class="num">Cost</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>4605664000050</td><td>Mel Desk</td><td>17/06/2020</td><td class="num">$200.00</td></tr>
+          <tr><td>2</td><td>9780444505156</td><td>Mel Bookcase</td><td>20/01/2020</td><td class="num">$150.00</td></tr>
+          <tr><td>3</td><td>9780444505156</td><td>Mel Bookcase</td><td>05/07/2020</td><td class="num">$150.00</td></tr>
+          <tr><td>4</td><td>8020187300016</td><td>Gas-lift Chair</td><td>05/07/2020</td><td class="num">$100.00</td></tr>
+        </tbody>
+      </table>
+      <div class="room-total">Room total: $600.00</div>
+    </div>
+
+    <!-- Room 129F -->
+    <div class="room-block">
+      <div class="room-head">
+        <span>Room&nbsp;&nbsp;&nbsp;&nbsp;: 129F</span><span>Space Type&nbsp;&nbsp;: Office</span>
+        <span>Occupying Dept : Science</span><span>Space Code&nbsp;&nbsp;: 101</span>
+        <span>Occupant : Clem Clemons</span><span>UFA&nbsp;&nbsp;: 12 sqm.</span>
+      </div>
+      <table class="data">
+        <thead><tr><th>#</th><th>Barcode</th><th>Description</th><th>Acquisition date</th><th class="num">Cost</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>8076809513456</td><td>Pine Desk</td><td>07/07/2021</td><td class="num">$400.00</td></tr>
+          <tr><td>2</td><td>3155250001387</td><td>Pine Bookcase</td><td>07/07/2021</td><td class="num">$300.00</td></tr>
+          <tr><td>3</td><td>3014260115531</td><td>Pine Filing Cab.</td><td>07/07/2021</td><td class="num">$200.00</td></tr>
+          <tr><td>4</td><td>8020187300016</td><td>Gas-lift Chair</td><td>05/07/2021</td><td class="num">$100.00</td></tr>
+        </tbody>
+      </table>
+      <div class="room-total">Room total: $1000.00</div>
+    </div>
+
+    <!-- Room 129E -->
+    <div class="room-block">
+      <div class="room-head">
+        <span>Room&nbsp;&nbsp;&nbsp;&nbsp;: 129E</span><span>Space Type&nbsp;&nbsp;: Office</span>
+        <span>Occupying Dept : Science</span><span>Space Code&nbsp;&nbsp;: 101</span>
+        <span>Occupant : Vacant</span><span>UFA&nbsp;&nbsp;: 10 sqm.</span>
+      </div>
+      <table class="data">
+        <thead><tr><th>#</th><th>Barcode</th><th>Description</th><th>Acquisition date</th><th class="num">Cost</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>4605664000050</td><td>Mel Desk</td><td>17/06/2022</td><td class="num">$200.00</td></tr>
+          <tr><td>2</td><td>9780444505156</td><td>Mel Bookcase</td><td>20/01/2022</td><td class="num">$150.00</td></tr>
+          <tr><td>3</td><td>3006634623969</td><td>Metal Filing Cab.</td><td>05/07/2022</td><td class="num">$150.00</td></tr>
+          <tr><td>4</td><td>8020187300016</td><td>Gas-lift Chair</td><td>05/07/2022</td><td class="num">$100.00</td></tr>
+        </tbody>
+      </table>
+      <div class="room-total">Room total: $600.00</div>
+    </div>
+
+    <!-- Room 128A -->
+    <div class="room-block">
+      <div class="room-head">
+        <span>Room&nbsp;&nbsp;&nbsp;&nbsp;: 128A</span><span>Space Type&nbsp;&nbsp;: Laboratory Facilities</span>
+        <span>Occupying Dept : Science</span><span>Space Code&nbsp;&nbsp;: 201</span>
+        <span>Occupant : Marta Reyes</span><span>UFA&nbsp;&nbsp;: 24 sqm.</span>
+      </div>
+      <table class="data">
+        <thead><tr><th>#</th><th>Barcode</th><th>Description</th><th>Acquisition date</th><th class="num">Cost</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>8076809513456</td><td>Pine Desk</td><td>03/02/2023</td><td class="num">$400.00</td></tr>
+          <tr><td>2</td><td>3014260115531</td><td>Pine Filing Cab.</td><td>03/02/2023</td><td class="num">$200.00</td></tr>
+          <tr><td>3</td><td>3006634623969</td><td>Metal Filing Cab.</td><td>03/02/2023</td><td class="num">$150.00</td></tr>
+          <tr><td>4</td><td>9781234567897</td><td>Fixed-frame Chair</td><td>03/02/2023</td><td class="num">$80.00</td></tr>
+        </tbody>
+      </table>
+      <div class="room-total">Room total: $830.00</div>
+    </div>
+
+    <div class="report-totals">
+      <div><span>Total space occupied</span><span>: 56 sqm.</span></div>
+      <div><span>Total asset value</span><span>: $3030.00</span></div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Report screen prepared by Desandu Hettiarachchi (74007597). Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

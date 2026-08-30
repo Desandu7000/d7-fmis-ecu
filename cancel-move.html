@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cancel move request - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Sehandu Perera</strong> (staff member)<br>
+      <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Cancel move request</div>
+  <div class="page-head">
+    <h1>Cancel move request</h1>
+    <p>View one of your own move requests and cancel it. You can only cancel your own requests.</p>
+  </div>
+
+  <div class="panel">
+    <h2>My move requests</h2>
+    <table class="data">
+      <thead>
+        <tr><th>Move ID</th><th>From</th><th>To</th><th>Move date</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>MV-2039</td><td>129F</td><td>190</td><td>18/09/2026</td><td><span class="pill scheduled">Scheduled</span></td></tr>
+        <tr><td>MV-2044</td><td>205B</td><td>128A</td><td>-</td><td><span class="pill requested">Requested</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h2>Move request MV-2039</h2>
+    <dl class="definition-list">
+      <dt>Move ID</dt><dd>MV-2039</dd>
+      <dt>Origin room ID</dt><dd>129F</dd>
+      <dt>Destination room ID</dt><dd>190</dd>
+      <dt>Move date</dt><dd>18/09/2026</dd>
+      <dt>Current move status</dt><dd><span id="move-status-pill" class="pill scheduled">Scheduled</span></dd>
+    </dl>
+
+    <div class="note warn">
+      Cancelling this move cannot be undone. If the move is still needed you will have to submit a new request.
+    </div>
+
+    <div class="btn-row">
+      <button type="button" class="btn danger" id="cancel-move-btn">Cancel this move</button>
+      <a class="btn secondary" href="dashboard.html">Back</a>
+    </div>
+
+    <div id="cancel-confirm" class="panel" style="margin-top:16px;background:var(--panel-alt);" hidden>
+      <p style="margin-top:0;"><strong>Cancel move MV-2039 from 129F to 190?</strong></p>
+      <div class="btn-row">
+        <button type="button" class="btn danger" id="cancel-confirm-btn">Yes, cancel the move</button>
+        <button type="button" class="btn secondary" id="cancel-keep-btn">Keep the move</button>
+      </div>
+    </div>
+
+    <p id="cancel-done" class="demo-result note" hidden>
+      Move MV-2039 has been cancelled. This is a demo screen, so nothing is stored.
+    </p>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Cancel move request screen prepared by Sehandu (74003639). Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule move - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Praveen Fernando</strong> (FMO staff)<br>
+      <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Schedule move</div>
+  <div class="page-head">
+    <h1>Schedule move</h1>
+    <p>Review a submitted move request and set the move date. This changes the status from Requested to Scheduled.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Requested moves</h2>
+    <table class="data">
+      <thead>
+        <tr><th>Move ID</th><th>Requested by</th><th>From</th><th>To</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>MV-2041</td><td>S1042866 - Aisha Rahman</td><td>190</td><td>129E</td><td><span class="pill requested">Requested</span></td></tr>
+        <tr><td>MV-2045</td><td>S1039920 - Tom Beckett</td><td>205B</td><td>207</td><td><span class="pill requested">Requested</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h2>Move request MV-2041</h2>
+    <form data-demo data-demo-message="Move MV-2041 is now Scheduled for 15/09/2026. This is a demo screen, so nothing is stored.">
+      <div class="form-row">
+        <div class="field">
+          <label for="move-id">Move ID</label>
+          <input type="text" id="move-id" name="move-id" value="MV-2041" readonly>
+        </div>
+        <div class="field">
+          <label for="staff">Requested by <span class="hint">(staff ID and name from HR)</span></label>
+          <input type="text" id="staff" name="staff" value="S1042866 - Aisha Rahman" readonly>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="origin">Origin room ID</label>
+          <input type="text" id="origin" name="origin" value="190" readonly>
+        </div>
+        <div class="field">
+          <label for="dest">Destination room ID</label>
+          <input type="text" id="dest" name="dest" value="129E" readonly>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="move-date">Move date <span class="hint">(must be a future date)</span></label>
+          <input type="date" id="move-date" name="move-date" value="2026-09-15" min="2026-08-31">
+        </div>
+        <div class="field">
+          <label for="status">Current move status</label>
+          <input type="text" id="status" name="status" value="Requested" readonly>
+        </div>
+      </div>
+      <div class="note">
+        The external removalist firm is booked separately. Changes are allowed up to 24 hours before the move date.
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">Confirm and schedule</button>
+        <a class="btn secondary" href="dashboard.html">Back</a>
+      </div>
+      <p class="demo-result note" hidden></p>
+    </form>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Schedule move screen prepared by Praveen (74006939). Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

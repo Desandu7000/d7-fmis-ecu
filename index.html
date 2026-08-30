@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FMIS - Facilities Management Information System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">
+        FMIS
+        <small>Facilities Management Information System</small>
+      </span>
+    </a>
+    <div class="who"><a href="login.html">Log in</a></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="page-head">
+    <h1>Facilities Management Information System</h1>
+    <p>Internal system for the Edith Cowan University Facilities Management Office.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h2>About this system</h2>
+      <p>
+        The FMIS helps the University keep track of moveable furniture assets across
+        campus buildings. Staff use it to see building plans, request an office move,
+        change or delete a move request, and log a maintenance call.
+      </p>
+      <p>
+        Facilities Management Office (FMO) staff can also record and update furniture
+        assets, schedule and re-schedule moves, and generate an FMO asset report that
+        lists the occupants and furniture in each room of a floor.
+      </p>
+      <p>
+        Staff contact details are read from the University HR system. The actual furniture
+        move is carried out by an external removalist firm.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>Sign in</h2>
+      <p>Use your ECU staff username and password to sign in.</p>
+      <a class="btn" href="login.html">Go to log in</a>
+      <div class="note">
+        Any authenticated staff member can view building plans and manage their own
+        move requests. Some screens are only available to FMO staff.
+      </div>
+    </div>
+  </div>
+
+  <h2>Quick links</h2>
+  <div class="grid-3">
+    <a class="card" href="report.html">
+      <h3>Generate FMO asset report</h3>
+      <p>Pick a building and floor, then view the room and furniture report.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="enter-asset.html">
+      <h3>Enter furniture asset</h3>
+      <p>Record a new desk, chair, filing cabinet or bookcase against a room.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="schedule-move.html">
+      <h3>Schedule move</h3>
+      <p>Review a submitted move request and set the move date.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="cancel-move.html">
+      <h3>Cancel move request</h3>
+      <p>View one of your own move requests and cancel it.</p>
+      <span class="tag">Staff member</span>
+    </a>
+    <a class="card" href="dashboard.html">
+      <h3>Staff dashboard</h3>
+      <p>All FMIS tasks in one place after you sign in.</p>
+      <span class="tag">All staff</span>
+    </a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Edith Cowan University - Facilities Management Office. Demo build for CSI1241 Systems
+  Analysis group assignment. Not a live system.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

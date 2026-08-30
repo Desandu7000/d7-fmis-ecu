@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enter furniture asset - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Thisum Thewmika</strong> (FMO staff)<br>
+      <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Enter furniture asset</div>
+  <div class="page-head">
+    <h1>Enter furniture asset</h1>
+    <p>Record a new furniture item and the room it belongs to. Current item types are desk, chair, filing cabinet and bookcase.</p>
+  </div>
+
+  <div class="panel">
+    <form data-demo data-demo-message="Asset saved. This is a demo screen, so nothing is stored.">
+      <div class="form-row">
+        <div class="field">
+          <label for="barcode">Barcode <span class="hint">(GTIN-compliant EAN-13, 13 digits)</span></label>
+          <input type="text" id="barcode" name="barcode" value="9312345678907" maxlength="13">
+        </div>
+        <div class="field">
+          <label for="item-type">Item type</label>
+          <select id="item-type" name="item-type">
+            <option selected>Desk</option>
+            <option>Bookcase</option>
+            <option>Filing cabinet</option>
+            <option>Chair</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" value="Mel Desk">
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="material">Construction material <span class="hint">(desks, bookcases and filing cabinets)</span></label>
+          <select id="material" name="material">
+            <option selected>Chipboard / Melamine</option>
+            <option>Stained Pine</option>
+            <option>Metal (filing cabinets only)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="chair-type">Chair type <span class="hint">(only if the item is a chair)</span></label>
+          <select id="chair-type" name="chair-type" disabled>
+            <option selected>Not applicable</option>
+            <option>Gas-lift</option>
+            <option>Fixed frame</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="cost">Purchase cost</label>
+          <input type="text" id="cost" name="cost" value="$200.00">
+        </div>
+        <div class="field">
+          <label for="pdate">Purchase date</label>
+          <input type="date" id="pdate" name="pdate" value="2026-08-14">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="supplier">Supplier</label>
+          <input type="text" id="supplier" name="supplier" value="Officeworks Joondalup">
+        </div>
+        <div class="field">
+          <label for="room">Room</label>
+          <select id="room" name="room">
+            <option selected>129G - Science - Office</option>
+            <option>129F - Science - Office</option>
+            <option>128A - Science - Laboratory Facilities</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button type="submit" class="btn">Save asset</button>
+        <button type="button" class="btn secondary" id="print-label">Print label</button>
+        <a class="btn secondary" href="dashboard.html">Cancel</a>
+      </div>
+      <p class="demo-result note" hidden></p>
+
+      <div id="label-preview" class="note" hidden>
+        Label preview: barcode 9312345678907 - Mel Desk - Room 129G. Send to the label printer.
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Enter furniture asset screen prepared by Thisum Thewmika L.A.D (74005695). Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

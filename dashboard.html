@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <span class="mark">ECU</span>
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Jeff Clause</strong> (FMO staff)<br>
+      <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Staff dashboard</h1>
+    <p>Welcome back, Jeff. Pick a task below.</p>
+  </div>
+
+  <div class="panel">
+    <h2>My move requests</h2>
+    <table class="data">
+      <thead>
+        <tr><th>Move ID</th><th>From</th><th>To</th><th>Move date</th><th>Status</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MV-2041</td><td>190</td><td>129E</td><td>-</td>
+          <td><span class="pill requested">Requested</span></td>
+          <td><a href="cancel-move.html">View / cancel</a></td>
+        </tr>
+        <tr>
+          <td>MV-2033</td><td>129G</td><td>205B</td><td>12/09/2026</td>
+          <td><span class="pill scheduled">Scheduled</span></td>
+          <td><a href="cancel-move.html">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>FMO tasks</h2>
+  <div class="grid-2">
+    <a class="card" href="report.html">
+      <h3>Generate FMO asset report</h3>
+      <p>Choose a building and floor and view occupants, room sizes and furniture values.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="enter-asset.html">
+      <h3>Enter furniture asset</h3>
+      <p>Record a new furniture item, its barcode, cost and the room it sits in.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="schedule-move.html">
+      <h3>Schedule move</h3>
+      <p>Review a submitted request and set a move date to schedule it.</p>
+      <span class="tag">FMO staff</span>
+    </a>
+    <a class="card" href="cancel-move.html">
+      <h3>Cancel move request</h3>
+      <p>Open one of your own requests and cancel it.</p>
+      <span class="tag">Staff member</span>
+    </a>
+  </div>
+</div>
+
+<footer class="footer">
+  Edith Cowan University - Facilities Management Office. Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
