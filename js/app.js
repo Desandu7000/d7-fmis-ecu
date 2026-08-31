@@ -62,4 +62,29 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('cancel-confirm').hidden = true;
     });
   }
+
+  // Cancel maintenance call confirmation step.
+  var cancelCallBtn = document.getElementById('cancel-call-btn');
+  if (cancelCallBtn) {
+    cancelCallBtn.addEventListener('click', function () {
+      document.getElementById('cancel-call-confirm').hidden = false;
+    });
+  }
+  var cancelCallConfirmBtn = document.getElementById('cancel-call-confirm-btn');
+  if (cancelCallConfirmBtn) {
+    cancelCallConfirmBtn.addEventListener('click', function () {
+      document.getElementById('cancel-call-confirm').hidden = true;
+      var pill = document.getElementById('call-status-pill');
+      if (pill) { pill.textContent = 'Cancelled'; pill.className = 'pill cancelled'; }
+      var done = document.getElementById('cancel-call-done');
+      if (done) { done.hidden = false; }
+      cancelCallBtn.disabled = true;
+    });
+  }
+  var cancelCallKeepBtn = document.getElementById('cancel-call-keep-btn');
+  if (cancelCallKeepBtn) {
+    cancelCallKeepBtn.addEventListener('click', function () {
+      document.getElementById('cancel-call-confirm').hidden = true;
+    });
+  }
 });

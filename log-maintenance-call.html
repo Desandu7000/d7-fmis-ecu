@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log a maintenance call - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="dashboard.html">
+      <img class="logo" src="assets/ecu-mark.png" alt="Edith Cowan University">
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Desandu Hettiarachchi</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="index.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="log-maintenance-call.html">Log maintenance call</a>
+    <a href="report.html">FMO asset report</a>
+    <a href="enter-asset.html">Enter furniture asset</a>
+    <a href="schedule-move.html">Schedule move</a>
+    <a href="cancel-move.html">Cancel move request</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Log a maintenance call</div>
+  <div class="page-head">
+    <h1>Log a maintenance call</h1>
+    <p>Report a problem with a room so the Facilities Management Office can action it. Any signed-in staff member can log a call and can cancel a call they logged while it is still open.</p>
+  </div>
+
+  <div class="panel">
+    <h2>New maintenance call</h2>
+    <form data-demo data-demo-message="Call logged with ID 008421 and status Logged. This is a demo screen, so nothing is stored.">
+      <div class="form-row">
+        <div class="field">
+          <label for="call-type">Call type</label>
+          <select id="call-type" name="call-type">
+            <option selected>Office to be opened</option>
+            <option>Lighting to be replaced</option>
+            <option>Carpet to be cleaned</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="room">Room</label>
+          <select id="room" name="room">
+            <option selected>129G - Science - Office</option>
+            <option>129F - Science - Office</option>
+            <option>128A - Science - Laboratory Facilities</option>
+            <option>205B - Engineering - Office</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="notes">Notes <span class="hint">(optional)</span></label>
+        <textarea id="notes" name="notes" rows="2">Door lock not releasing with the staff card. Room is needed for a 9am class.</textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="loggedby">Logged by <span class="hint">(staff ID and name from HR)</span></label>
+          <input type="text" id="loggedby" name="loggedby" value="74007597 - Desandu Hettiarachchi" readonly>
+        </div>
+        <div class="field">
+          <label for="status">Status</label>
+          <input type="text" id="status" name="status" value="Logged" readonly>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button type="submit" class="btn">Log call</button>
+        <a class="btn secondary" href="dashboard.html">Cancel</a>
+      </div>
+      <p class="demo-result note" hidden></p>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2>My maintenance calls</h2>
+    <table class="data">
+      <thead>
+        <tr><th>Call ID</th><th>Type</th><th>Room</th><th>Logged</th><th>Status</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>008394</td><td>Lighting to be replaced</td><td>129F</td><td>27/08/2026</td>
+          <td><span id="call-status-pill" class="pill requested">Logged</span></td>
+          <td><button type="button" class="btn danger" id="cancel-call-btn" style="padding:4px 12px;font-size:0.82rem;">Cancel call</button></td>
+        </tr>
+        <tr>
+          <td>008351</td><td>Carpet to be cleaned</td><td>128A</td><td>21/08/2026</td>
+          <td><span class="pill scheduled">Actioned</span></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>008302</td><td>Office to be opened</td><td>205B</td><td>14/08/2026</td>
+          <td><span class="pill cancelled">Cancelled</span></td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="cancel-call-confirm" class="panel" style="margin-top:16px;background:var(--panel-alt);" hidden>
+      <p style="margin-top:0;"><strong>Cancel maintenance call 008394 (Lighting to be replaced, Room 129F)?</strong></p>
+      <p style="font-size:0.88rem;color:var(--ink-soft);margin-top:0;">You can only cancel a call while it is still Logged. Once the FMO has actioned it, it cannot be cancelled.</p>
+      <div class="btn-row">
+        <button type="button" class="btn danger" id="cancel-call-confirm-btn">Yes, cancel the call</button>
+        <button type="button" class="btn secondary" id="cancel-call-keep-btn">Keep the call</button>
+      </div>
+    </div>
+
+    <p id="cancel-call-done" class="demo-result note" hidden>
+      Call 008394 has been cancelled. This is a demo screen, so nothing is stored.
+    </p>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Log a maintenance call screen prepared by Desandu Hettiarachchi (74007597). Demo build for CSI1241.
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

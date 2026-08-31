@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+html,body{margin:0;padding:0;background:#fff;}
+body{display:inline-block;padding:12px;}
+svg.brd{width:1700px;max-width:none;height:auto;font-family:"Barlow","Segoe UI",Arial,sans-serif;}
+svg.brd text{fill:#1f2422;}
+.b-state{fill:#e6f1ee;stroke:#13584c;stroke-width:1.8;}
+.b-event{fill:#ffffff;stroke:#13584c;stroke-width:1.8;}
+.b-cond{fill:#ffffff;stroke:#13584c;stroke-width:1.8;}
+.b-sig{fill:#e6f1ee;stroke:#7fa79c;stroke-width:1.4;}
+.b-blob{fill:rgba(37,177,151,0.07);stroke:#13584c;stroke-width:1.5;stroke-dasharray:2 3;}
+.b-id{font-weight:700;font-size:12px;fill:#13584c;}
+.b-lbl{font-size:12px;}
+.b-blobttl{font-size:11px;font-weight:700;fill:#13584c;}
+.b-link{stroke:#13584c;stroke-width:1.7;fill:none;}
+.b-guard{font-size:11px;fill:#af1d75;font-style:italic;font-weight:600;}
+.b-note{font-size:10.5px;fill:#575a5b;}
+</style></head><body>
+<svg class="brd" viewBox="0 0 1700 1020" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13584c"/></marker>
+  </defs>
+
+  <text x="30" y="26" style="font-size:16px;font-weight:700;fill:#13584c">Business Rules Diagram - Log a Maintenance Call</text>
+  <text x="30" y="44" style="font-size:11px;fill:#575a5b">CSI1241 Systems Analysis - Group A. Notation: Business Rules Diagram lecture (states, events, conditions, signals, Harel blob).</text>
+
+  <!-- ============ LOG PATH (top) ============ -->
+  <!-- T1 signal -->
+  <path class="b-sig" d="M30,110 H150 L164,130 L150,150 H30 Z"/>
+  <text class="b-id" x="40" y="126">T1</text>
+  <text class="b-lbl" x="40" y="142">Fault reported</text>
+
+  <!-- blob 1: start + C1 -->
+  <rect class="b-blob" x="210" y="70" width="300" height="150" rx="18"/>
+  <text class="b-blobttl" x="224" y="88">Harel blob - log check</text>
+  <circle cx="255" cy="130" r="7" fill="#13584c"/>
+  <text class="b-note" x="238" y="158">no call yet</text>
+  <polygon class="b-cond" points="385,92 475,131 385,170 295,131"/>
+  <text class="b-id" x="360" y="126">C1</text>
+  <text class="b-lbl" x="330" y="141">Call type and</text>
+  <text class="b-lbl" x="338" y="155">room valid?</text>
+  <path class="b-link" d="M164,130 H295" marker-end="url(#ar)"/>
+
+  <!-- C1 true -> E1 -->
+  <path class="b-link" d="M475,131 H545" marker-end="url(#ar)"/>
+  <text class="b-guard" x="486" y="122">yes (C1)</text>
+  <rect class="b-event" x="548" y="104" width="120" height="52" rx="4"/>
+  <text class="b-id" x="560" y="124">E1</text>
+  <text class="b-lbl" x="560" y="140">Log call</text>
+
+  <!-- E1 -> S1 -->
+  <path class="b-link" d="M668,130 H740" marker-end="url(#ar)"/>
+  <ellipse class="b-state" cx="820" cy="130" rx="80" ry="40"/>
+  <text class="b-id" x="800" y="126">S1</text>
+  <text class="b-lbl" x="792" y="142">Logged</text>
+
+  <!-- S1 -> M1 -->
+  <path class="b-link" d="M900,120 H980" marker-end="url(#ar)"/>
+  <path class="b-sig" d="M984,100 H1110 L1124,120 L1110,140 H984 Z"/>
+  <text class="b-id" x="994" y="116">M1</text>
+  <text class="b-lbl" x="994" y="132">Call logged</text>
+
+  <!-- C1 false -> E4 -> M2 -->
+  <path class="b-link" d="M385,170 V232 H455" marker-end="url(#ar)"/>
+  <text class="b-guard" x="330" y="210">no (!C1)</text>
+  <rect class="b-event" x="458" y="206" width="120" height="52" rx="4"/>
+  <text class="b-id" x="470" y="226">E4</text>
+  <text class="b-lbl" x="470" y="242">Reject call</text>
+  <path class="b-link" d="M578,232 H650" marker-end="url(#ar)"/>
+  <path class="b-sig" d="M654,212 H796 L810,232 L796,252 H654 Z"/>
+  <text class="b-id" x="664" y="228">M2</text>
+  <text class="b-lbl" x="664" y="244">Invalid call details</text>
+
+  <!-- ============ blob 2: S1 Logged + C2 (cancel/action) ============ -->
+  <rect class="b-blob" x="700" y="300" width="360" height="230" rx="20"/>
+  <text class="b-blobttl" x="716" y="320">Harel blob - action / cancel check</text>
+  <ellipse class="b-state" cx="820" cy="380" rx="80" ry="38"/>
+  <text class="b-id" x="800" y="376">S1</text>
+  <text class="b-lbl" x="792" y="392">Logged</text>
+  <polygon class="b-cond" points="880,430 985,470 880,510 775,470"/>
+  <text class="b-id" x="855" y="466">C2</text>
+  <text class="b-lbl" x="828" y="481">Cancelled by</text>
+  <text class="b-lbl" x="835" y="495">the logger?</text>
+
+  <!-- link S1(top) down into blob 2 -->
+  <path class="b-link" d="M820,170 V342" marker-end="url(#ar)"/>
+  <text class="b-note" x="828" y="250">the same Logged call</text>
+
+  <!-- T2 -> action -->
+  <path class="b-sig" d="M470,330 H610 L624,350 L610,370 H470 Z"/>
+  <text class="b-id" x="480" y="346">T2</text>
+  <text class="b-lbl" x="480" y="362">FMO actions the call</text>
+  <path class="b-link" d="M624,350 H740" marker-end="url(#ar)"/>
+
+  <!-- E3 Action -->
+  <path class="b-link" d="M900,372 H1120" marker-end="url(#ar)"/>
+  <text class="b-guard" x="1000" y="362">(state = Logged)</text>
+  <rect class="b-event" x="1124" y="346" width="120" height="52" rx="4"/>
+  <text class="b-id" x="1136" y="366">E3</text>
+  <text class="b-lbl" x="1136" y="382">Action call</text>
+  <path class="b-link" d="M1244,372 H1320" marker-end="url(#ar)"/>
+  <ellipse class="b-state" cx="1400" cy="372" rx="76" ry="38"/>
+  <text class="b-id" x="1381" y="368">S2</text>
+  <text class="b-lbl" x="1372" y="384">Actioned</text>
+  <path class="b-link" d="M1476,362 H1540" marker-end="url(#ar)"/>
+  <path class="b-sig" d="M1544,342 H1666 L1680,362 L1666,382 H1544 Z"/>
+  <text class="b-id" x="1554" y="358">M4</text>
+  <text class="b-lbl" x="1554" y="374">Call actioned</text>
+
+  <!-- T3 -> cancel -->
+  <path class="b-sig" d="M470,470 H610 L624,490 L610,510 H470 Z"/>
+  <text class="b-id" x="480" y="486">T3</text>
+  <text class="b-lbl" x="480" y="502">Logger cancels the call</text>
+  <path class="b-link" d="M624,490 H772" marker-end="url(#ar)"/>
+
+  <!-- C2 true -> E2 -> S3 -> M3 -->
+  <path class="b-link" d="M985,470 H1120" marker-end="url(#ar)"/>
+  <text class="b-guard" x="1006" y="462">yes (C2)</text>
+  <rect class="b-event" x="1124" y="446" width="120" height="52" rx="4"/>
+  <text class="b-id" x="1136" y="466">E2</text>
+  <text class="b-lbl" x="1136" y="482">Cancel call</text>
+  <path class="b-link" d="M1244,472 H1320" marker-end="url(#ar)"/>
+  <ellipse class="b-state" cx="1400" cy="472" rx="76" ry="38"/>
+  <text class="b-id" x="1381" y="468">S3</text>
+  <text class="b-lbl" x="1370" y="484">Cancelled</text>
+  <path class="b-link" d="M1476,482 H1540" marker-end="url(#ar)"/>
+  <path class="b-sig" d="M1544,462 H1666 L1680,482 L1666,502 H1544 Z"/>
+  <text class="b-id" x="1554" y="478">M3</text>
+  <text class="b-lbl" x="1554" y="494">Call cancelled</text>
+
+  <!-- C2 false -> E5 -> S1 (no change) -> M5 -->
+  <path class="b-link" d="M880,510 V600 H1120" marker-end="url(#ar)"/>
+  <text class="b-guard" x="900" y="560">no (!C2)</text>
+  <rect class="b-event" x="1124" y="574" width="120" height="52" rx="4"/>
+  <text class="b-id" x="1136" y="594">E5</text>
+  <text class="b-lbl" x="1136" y="610">Reject cancel</text>
+  <path class="b-link" d="M1244,600 H1320" marker-end="url(#ar)"/>
+  <ellipse class="b-state" cx="1400" cy="600" rx="76" ry="38"/>
+  <text class="b-id" x="1381" y="596">S1</text>
+  <text class="b-lbl" x="1372" y="612">Logged</text>
+  <text class="b-note" x="1352" y="648">(no state change)</text>
+  <path class="b-link" d="M1476,590 H1540" marker-end="url(#ar)"/>
+  <path class="b-sig" d="M1544,570 H1666 L1680,590 L1666,610 H1544 Z"/>
+  <text class="b-id" x="1554" y="586">M5</text>
+  <text class="b-lbl" x="1554" y="602">Cancel not allowed</text>
+
+  <!-- ============ Legend ============ -->
+  <rect x="30" y="710" width="1120" height="270" rx="8" fill="#f7fbf9" stroke="#d7ddda"/>
+  <text class="b-blobttl" x="46" y="732" style="font-size:12px">Legend</text>
+
+  <ellipse class="b-state" cx="110" cy="770" rx="60" ry="26"/>
+  <text class="b-id" x="92" y="768">Sn</text><text class="b-lbl" x="82" y="782">state</text>
+  <text class="b-note" x="200" y="775">State - a value of an attribute of an object (here: the maintenance call status).</text>
+
+  <rect class="b-event" x="52" y="812" width="116" height="40" rx="4"/>
+  <text class="b-id" x="64" y="830">En</text><text class="b-lbl" x="64" y="845">event</text>
+  <text class="b-note" x="200" y="835">Event - an instantaneous action carried out by the organisation.</text>
+
+  <polygon class="b-cond" points="110,872 168,896 110,920 52,896"/>
+  <text class="b-id" x="94" y="893">Cn</text><text class="b-lbl" x="88" y="907">cond?</text>
+  <text class="b-note" x="200" y="899">Condition - a data test that routes between transitions. Shown inside the Harel blob.</text>
+
+  <path class="b-sig" d="M52,930 H150 L164,948 L150,966 H52 Z"/>
+  <text class="b-id" x="62" y="945">T/M</text>
+  <text class="b-note" x="200" y="953">Signal - a trigger (Tn) enters the system; a message (Mn) leaves it.</text>
+
+  <rect class="b-blob" x="640" y="812" width="120" height="40" rx="16"/>
+  <text class="b-note" x="780" y="836">Harel blob - encloses the prior state and the condition(s) for a transition.</text>
+
+  <path class="b-link" d="M640,884 H740" marker-end="url(#ar)"/>
+  <text class="b-note" x="780" y="888">Transition - every state-to-state change happens through an event.</text>
+</svg>
+</body></html>

@@ -13,10 +13,11 @@ stored, and buttons that would change data are placeholders.
 | `index.html` | Homepage / landing | shared | - |
 | `login.html` | Log in | Gaith Sanudaya Giragama (74006901) | Staff Member |
 | `dashboard.html` | Staff dashboard / navigation | shared | - |
-| `report.html` | Generate FMO Asset Report | Desandu Hettiarachchi (74007597) | FMO Staff Member |
+| `log-maintenance-call.html` | Log a Maintenance Call | Desandu Hettiarachchi (74007597) | Staff Member |
 | `enter-asset.html` | Enter Furniture Asset | Thisum Thewmika L.A.D (74005695) | FMO Staff Member |
 | `schedule-move.html` | Schedule Move | Praveen (74006939) | FMO Staff Member |
 | `cancel-move.html` | Cancel Move Request | Sehandu (74003639) | Staff Member |
+| `report.html` | Generate FMO Asset Report | shared FMIS feature | FMO Staff Member |
 
 ## Running
 
