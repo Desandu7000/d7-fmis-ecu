@@ -35,6 +35,8 @@ Then visit http://localhost:8000
   TEFMA space types, AutoCAD `.dwg` drawing names).
 - The FMO Asset Report layout follows the sample report in the case study
   (`FMIS_case_study_262v1.4.pdf`).
+- The navigation map is not a page of the site. Its diagram source and PNG export
+  are kept under `docs/` for use in the report.
 
 ## License
 
