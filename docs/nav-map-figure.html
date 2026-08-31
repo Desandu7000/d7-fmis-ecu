@@ -1,26 +1,26 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8">
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
 <style>
 html,body{margin:0;padding:0;background:#fff;}
 body{display:inline-block;padding:10px;}
 
   .wrap { max-width:1600px; }
   .map-wrap { background:#fff; border:1px solid var(--line); padding:16px; overflow-x:auto; }
-  svg.navmap { width:1500px; max-width:none; height:auto; font-family:"Segoe UI",Arial,sans-serif; }
-  svg.navmap text { fill:#23262b; }
-  .nm-page { fill:#ffffff; stroke:#1d2a4d; stroke-width:1.6; }
-  .nm-home { fill:#eef1f5; stroke:#1d2a4d; stroke-width:2.4; }
-  .nm-num  { font-weight:700; font-size:12px; fill:#1d2a4d; }
+  svg.navmap { width:1500px; max-width:none; height:auto; font-family:"Barlow","Segoe UI",Arial,sans-serif; }
+  svg.navmap text { fill:#1f2422; }
+  .nm-page { fill:#ffffff; stroke:#13584c; stroke-width:1.6; }
+  .nm-home { fill:#e6f1ee; stroke:#13584c; stroke-width:2.4; }
+  .nm-num  { font-weight:700; font-size:12px; fill:#13584c; }
   .nm-lbl  { font-size:12.5px; }
-  .nm-sub  { font-size:10.5px; fill:#55606e; }
-  .nm-blob { fill:rgba(29,42,77,0.04); stroke:#1d2a4d; stroke-width:1.4; stroke-dasharray:2 3; }
-  .nm-blobttl { font-size:12.5px; font-weight:700; fill:#1d2a4d; }
-  .nm-link { stroke:#1d2a4d; stroke-width:1.6; fill:none; }
-  .nm-inh  { stroke:#a6192e; stroke-width:1.6; fill:none; stroke-dasharray:5 4; }
-  .nm-inhlbl { font-size:11px; fill:#a6192e; font-style:italic; }
-  .nm-note { font-size:10.5px; fill:#55606e; }
-  .nm-popbg { fill:#e7e9ee; stroke:#8a93a3; stroke-width:1; }
-  .nm-ext  { fill:#ffffff; stroke:#55606e; stroke-width:1.4; stroke-dasharray:4 3; }
-  .nm-pill { fill:#a6192e; }
+  .nm-sub  { font-size:10.5px; fill:#575a5b; }
+  .nm-blob { fill:rgba(37,177,151,0.07); stroke:#13584c; stroke-width:1.4; stroke-dasharray:2 3; }
+  .nm-blobttl { font-size:12.5px; font-weight:700; fill:#13584c; }
+  .nm-link { stroke:#13584c; stroke-width:1.6; fill:none; }
+  .nm-inh  { stroke:#af1d75; stroke-width:1.6; fill:none; stroke-dasharray:5 4; }
+  .nm-inhlbl { font-size:11px; fill:#af1d75; font-style:italic; }
+  .nm-note { font-size:10.5px; fill:#575a5b; }
+  .nm-popbg { fill:#e6f1ee; stroke:#7fa79c; stroke-width:1; }
+  .nm-ext  { fill:#ffffff; stroke:#575a5b; stroke-width:1.4; stroke-dasharray:4 3; }
+  .nm-pill { fill:#af1d75; }
   .nm-pilltxt { fill:#fff; font-size:9.5px; font-weight:700; }
 
 svg.navmap{display:block;}
@@ -28,16 +28,16 @@ svg.navmap{display:block;}
 <svg class="navmap" viewBox="0 0 1500 1120" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
-        <path d="M0,0 L7,3 L0,6 Z" fill="#1d2a4d"/>
+        <path d="M0,0 L7,3 L0,6 Z" fill="#13584c"/>
       </marker>
       <marker id="arrowRed" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
-        <path d="M0,0 L7,3 L0,6 Z" fill="#a6192e"/>
+        <path d="M0,0 L7,3 L0,6 Z" fill="#af1d75"/>
       </marker>
     </defs>
 
     <!-- title -->
-    <text x="40" y="30" style="font-size:16px;font-weight:700;fill:#1d2a4d">FMIS - Website Navigation Map</text>
-    <text x="40" y="48" style="font-size:11px;fill:#55606e">CSI1241 Systems Analysis - Group A. Notation: Website Navigation lecture v1.3.</text>
+    <text x="40" y="30" style="font-size:16px;font-weight:700;fill:#13584c">FMIS - Website Navigation Map</text>
+    <text x="40" y="48" style="font-size:11px;fill:#575a5b">CSI1241 Systems Analysis - Group A. Notation: Website Navigation lecture v1.3.</text>
 
     <!-- ===== standard-links Harel blob ===== -->
     <rect class="nm-blob" x="40" y="70" width="300" height="86" rx="20"/>
@@ -73,7 +73,7 @@ svg.navmap{display:block;}
     <path class="nm-link" d="M640,268 C520,300 430,300 360,320"/>
     <text class="nm-note" x="470" y="292">bi-directional (all staff)</text>
     <path class="nm-link" d="M770,268 C880,290 940,270 980,290" marker-end="url(#arrow)"/>
-    <rect x="905" y="270" width="9" height="9" transform="rotate(45 909 274)" fill="#1d2a4d"/>
+    <rect x="905" y="270" width="9" height="9" transform="rotate(45 909 274)" fill="#13584c"/>
     <text class="nm-note" x="812" y="255">selected link - FMO staff only</text>
 
     <!-- ===== Staff Member blob ===== -->
@@ -111,10 +111,10 @@ svg.navmap{display:block;}
     <rect class="nm-page" x="90" y="696" width="255" height="50" rx="8"/>
     <text class="nm-num" x="102" y="715">2.6</text>
     <text class="nm-lbl" x="102" y="733">Cancel Maintenance Call</text>
-    <path d="M345,730 L345,746 L329,746 Z" fill="#1d2a4d"/>
+    <path d="M345,730 L345,746 L329,746 Z" fill="#13584c"/>
 
     <!-- note inside staff blob -->
-    <rect x="378" y="556" width="255" height="150" rx="6" fill="#f7f8fa" stroke="#d9dde3"/>
+    <rect x="378" y="556" width="255" height="150" rx="6" fill="#f4faf8" stroke="#d7ddda"/>
     <text class="nm-note" x="390" y="578">Every page in this group also has a</text>
     <text class="nm-note" x="390" y="593">bi-directional link to the Dashboard (2)</text>
     <text class="nm-note" x="390" y="608">and to Home (H). These come from the</text>
@@ -162,8 +162,8 @@ svg.navmap{display:block;}
     <text class="nm-lbl" x="747" y="723">Action Maintenance Call</text>
 
     <!-- page connector 3 -->
-    <circle cx="1044" cy="641" r="17" fill="#fff" stroke="#1d2a4d" stroke-width="1.6"/>
-    <text x="1039" y="646" style="font-size:13px;font-weight:700;fill:#1d2a4d">3</text>
+    <circle cx="1044" cy="641" r="17" fill="#fff" stroke="#13584c" stroke-width="1.6"/>
+    <text x="1039" y="646" style="font-size:13px;font-weight:700;fill:#13584c">3</text>
     <path class="nm-link" d="M1010,641 L1027,641" marker-end="url(#arrow)"/>
     <text class="nm-note" x="1066" y="638">map continues: Building /</text>
     <text class="nm-note" x="1066" y="652">Floor / Room admin detail</text>
@@ -176,16 +176,16 @@ svg.navmap{display:block;}
 
     <!-- ===== HR System (new application) ===== -->
     <rect class="nm-ext" x="1270" y="520" width="190" height="58" rx="6"/>
-    <text style="font-size:12px;font-weight:700;fill:#1d2a4d" x="1284" y="544">HR System</text>
+    <text style="font-size:12px;font-weight:700;fill:#13584c" x="1284" y="544">HR System</text>
     <text class="nm-sub" x="1284" y="560">new application - external</text>
     <text class="nm-sub" x="1284" y="572">(different URL, read only)</text>
     <path class="nm-link" d="M1010,641 C1110,641 1180,600 1268,556" marker-end="url(#arrow)"/>
-    <rect x="1146" y="604" width="9" height="9" transform="rotate(45 1150 608)" fill="#1d2a4d"/>
+    <rect x="1146" y="604" width="9" height="9" transform="rotate(45 1150 608)" fill="#13584c"/>
     <text class="nm-note" x="1030" y="672">read staff contact details</text>
     <text class="nm-note" x="1030" y="685">(FR 3.1.11, 3.1.18; A4.13)</text>
 
     <!-- ===== Legend ===== -->
-    <rect x="40" y="812" width="1120" height="286" rx="6" fill="#fbfbfc" stroke="#d9dde3"/>
+    <rect x="40" y="812" width="1120" height="286" rx="6" fill="#f7fbf9" stroke="#d7ddda"/>
     <text class="nm-blobttl" x="58" y="834">Legend</text>
 
     <!-- col 1 -->
@@ -198,7 +198,7 @@ svg.navmap{display:block;}
     <text class="nm-note" x="196" y="913">Site landing page. Always reachable from any page (closure).</text>
 
     <rect class="nm-page" x="60" y="936" width="120" height="34" rx="6"/>
-    <path d="M180,970 L180,954 L164,970 Z" fill="#1d2a4d"/>
+    <path d="M180,970 L180,954 L164,970 Z" fill="#13584c"/>
     <text class="nm-lbl" x="70" y="957">Leaf page</text>
     <text class="nm-note" x="196" y="957">Does not link to any further page (may still return to earlier pages).</text>
 
@@ -219,7 +219,7 @@ svg.navmap{display:block;}
     <text class="nm-note" x="775" y="900">Uni-directional link (jump to another part of the site).</text>
 
     <path class="nm-link" d="M660,932 L760,932" marker-end="url(#arrow)"/>
-    <rect x="705" y="928" width="9" height="9" transform="rotate(45 709 932)" fill="#1d2a4d"/>
+    <rect x="705" y="928" width="9" height="9" transform="rotate(45 709 932)" fill="#13584c"/>
     <text class="nm-note" x="775" y="936">Selected link (only for a chosen user role, e.g. FMO staff).</text>
 
     <rect class="nm-blob" x="660" y="956" width="100" height="30" rx="14"/>
@@ -228,8 +228,8 @@ svg.navmap{display:block;}
     <path class="nm-inh" d="M660,1006 L760,1006" marker-end="url(#arrowRed)"/>
     <text class="nm-note" x="775" y="1010">inherits - the grouped link appears on every descendant page.</text>
 
-    <circle cx="710" cy="1042" r="14" fill="#fff" stroke="#1d2a4d" stroke-width="1.6"/>
-    <text x="705" y="1047" style="font-size:12px;font-weight:700;fill:#1d2a4d">n</text>
+    <circle cx="710" cy="1042" r="14" fill="#fff" stroke="#13584c" stroke-width="1.6"/>
+    <text x="705" y="1047" style="font-size:12px;font-weight:700;fill:#13584c">n</text>
     <text class="nm-note" x="775" y="1046">Page connector - map continues on another sheet / another area.</text>
   </svg>
 </body></html>
