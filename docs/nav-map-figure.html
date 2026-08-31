@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FMIS navigation map - FMIS</title>
-<link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html><html><head><meta charset="UTF-8">
 <style>
+html,body{margin:0;padding:0;background:#fff;}
+body{display:inline-block;padding:10px;}
+
   .wrap { max-width:1600px; }
   .map-wrap { background:#fff; border:1px solid var(--line); padding:16px; overflow-x:auto; }
   svg.navmap { width:1500px; max-width:none; height:auto; font-family:"Segoe UI",Arial,sans-serif; }
@@ -25,42 +22,10 @@
   .nm-ext  { fill:#ffffff; stroke:#55606e; stroke-width:1.4; stroke-dasharray:4 3; }
   .nm-pill { fill:#a6192e; }
   .nm-pilltxt { fill:#fff; font-size:9.5px; font-weight:700; }
-</style>
-</head>
-<body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="dashboard.html">
-      <span class="mark">ECU</span>
-      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
-    </a>
-    <div class="who">
-      Signed in as <strong>Desandu Hettiarachchi</strong><br>
-      Role: FMO staff member &nbsp;|&nbsp; <a href="index.html">Log out</a>
-    </div>
-  </div>
-</header>
-<nav class="mainnav">
-  <div class="mainnav-inner">
-    <a href="dashboard.html">Dashboard</a>
-    <a href="report.html">FMO asset report</a>
-    <a href="enter-asset.html">Enter furniture asset</a>
-    <a href="schedule-move.html">Schedule move</a>
-    <a href="cancel-move.html">Cancel move request</a>
-    <a href="nav-map.html">Navigation map</a>
-  </div>
-</nav>
-
-<div class="wrap">
-  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Navigation map</div>
-  <div class="page-head">
-    <h1>FMIS website navigation map</h1>
-    <p>Whole-system navigation map for the FMIS. Notation follows the CSI1241 Website Navigation lecture (v1.3): pages with catenated numbers, Harel blobs, inherits arrows, bi-directional / uni-directional / selected links, pop-up pages, new applications and page connectors.</p>
-  </div>
-
-  <div class="map-wrap">
-  <svg class="navmap" viewBox="0 0 1500 1120" xmlns="http://www.w3.org/2000/svg">
+svg.navmap{display:block;}
+</style></head><body>
+<svg class="navmap" viewBox="0 0 1500 1120" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
         <path d="M0,0 L7,3 L0,6 Z" fill="#1d2a4d"/>
@@ -267,19 +232,4 @@
     <text x="705" y="1047" style="font-size:12px;font-weight:700;fill:#1d2a4d">n</text>
     <text class="nm-note" x="775" y="1046">Page connector - map continues on another sheet / another area.</text>
   </svg>
-  </div>
-
-  <div class="note">
-    This map covers the whole FMIS. The five pages built for this assignment are 2.7 Generate
-    FMO Asset Report (Web Page #1), 2.8 Enter Furniture Asset, 1 Log In, 2.10 Schedule /
-    Reschedule Move and 2.4 Cancel Move Request.
-  </div>
-</div>
-
-<footer class="footer">
-  Navigation map - CSI1241 Group A. Demo build for the FMIS case study.
-</footer>
-
-<script src="js/app.js"></script>
-</body>
-</html>
+</body></html>
