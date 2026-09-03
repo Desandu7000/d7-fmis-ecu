@@ -1,130 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2900 2000" font-family="Barlow, Segoe UI, Arial, sans-serif">
-<rect width="2900" height="2000" fill="#fff"/>
-<defs><marker id="op" markerWidth="13" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M1,1 L10,4 L1,7" fill="none" stroke="#9a5aa8" stroke-width="1.6"/></marker><marker id="tr" markerWidth="20" markerHeight="18" refX="17" refY="9" orient="auto"><path d="M1,1 L17,9 L1,17 Z" fill="#fff" stroke="#1f2a2e" stroke-width="1.6"/></marker></defs>
-<text x="1450.0" y="44" text-anchor="middle" font-size="30" font-weight="700" fill="#13584c">Use Case Diagram - Facilities Management Information System (FMIS)</text>
-<text x="1450.0" y="74" text-anchor="middle" font-size="16" fill="#5b6b66">CSI1241 Systems Analysis - Group A</text>
-<rect x="420" y="100" width="2200" height="1720" fill="none" stroke="#1f2a2e" stroke-width="2"/>
-<text x="1520.0" y="130" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2a2e">FMIS</text>
-<g stroke="#1f2a2e" stroke-width="2.6" fill="none"><circle cx="150" cy="674" r="17" fill="#fff"/><line x1="150" y1="691" x2="150" y2="740"/><line x1="122" y1="708" x2="178" y2="708"/><line x1="150" y1="740" x2="126" y2="776"/><line x1="150" y1="740" x2="174" y2="776"/></g>
-<text x="150" y="802" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2a2e">Staff Member</text>
-<g stroke="#1f2a2e" stroke-width="2.6" fill="none"><circle cx="150" cy="1334" r="17" fill="#fff"/><line x1="150" y1="1351" x2="150" y2="1400"/><line x1="122" y1="1368" x2="178" y2="1368"/><line x1="150" y1="1400" x2="126" y2="1436"/><line x1="150" y1="1400" x2="174" y2="1436"/></g>
-<text x="150" y="1462" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2a2e">FMO Staff Member</text>
-<text x="2800" y="828" text-anchor="middle" font-size="13" font-style="italic" fill="#5b6b66">&#171;external system&#187;</text>
-<g stroke="#1f2a2e" stroke-width="2.6" fill="none"><circle cx="2800" cy="854" r="17" fill="#fff"/><line x1="2800" y1="871" x2="2800" y2="920"/><line x1="2772" y1="888" x2="2828" y2="888"/><line x1="2800" y1="920" x2="2776" y2="956"/><line x1="2800" y1="920" x2="2824" y2="956"/></g>
-<text x="2800" y="982" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2a2e">HR System</text>
-<line x1="150" y1="1308" x2="150" y2="790" stroke="#1f2a2e" stroke-width="2" marker-end="url(#tr)"/>
-<text x="168" y="1050.0" font-size="13" font-style="italic" fill="#5b6b66">generalises</text>
-<ellipse cx="1420" cy="190" rx="178" ry="48" fill="#d4efe9" stroke="#13584c" stroke-width="1.8"/>
-<text x="1420" y="195" text-anchor="middle" font-size="15" fill="#12312b">Log In</text>
-<ellipse cx="700" cy="430" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="426" text-anchor="middle" font-size="15" fill="#12312b">View Building</text>
-<text x="700" y="444" text-anchor="middle" font-size="15" fill="#12312b">Floor Plan</text>
-<ellipse cx="700" cy="635" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="640" text-anchor="middle" font-size="15" fill="#12312b">Request Office Move</text>
-<ellipse cx="700" cy="840" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="845" text-anchor="middle" font-size="15" fill="#12312b">Change Move Request</text>
-<ellipse cx="700" cy="1045" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="1050" text-anchor="middle" font-size="15" fill="#12312b">Cancel Move Request</text>
-<ellipse cx="700" cy="1250" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="1255" text-anchor="middle" font-size="15" fill="#12312b">Log Maintenance Call</text>
-<ellipse cx="700" cy="1455" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="700" y="1451" text-anchor="middle" font-size="15" fill="#12312b">Cancel</text>
-<text x="700" y="1469" text-anchor="middle" font-size="15" fill="#12312b">Maintenance Call</text>
-<ellipse cx="1210" cy="430" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1210" y="435" text-anchor="middle" font-size="15" fill="#12312b">Schedule Move</text>
-<ellipse cx="1210" cy="635" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1210" y="640" text-anchor="middle" font-size="15" fill="#12312b">Reschedule Move</text>
-<ellipse cx="1210" cy="840" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1210" y="845" text-anchor="middle" font-size="15" fill="#12312b">Complete Move</text>
-<ellipse cx="1210" cy="1045" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1210" y="1041" text-anchor="middle" font-size="15" fill="#12312b">Action</text>
-<text x="1210" y="1059" text-anchor="middle" font-size="15" fill="#12312b">Maintenance Call</text>
-<ellipse cx="1210" cy="1250" rx="178" ry="48" fill="#eef0ef" stroke="#13584c" stroke-width="1.8"/>
-<text x="1210" y="1255" text-anchor="middle" font-size="15" fill="#12312b">Cancel Request</text>
-<ellipse cx="1720" cy="430" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="435" text-anchor="middle" font-size="15" fill="#12312b">Enter Furniture Asset</text>
-<ellipse cx="1720" cy="635" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="640" text-anchor="middle" font-size="15" fill="#12312b">Update Furniture Asset</text>
-<ellipse cx="1720" cy="840" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="836" text-anchor="middle" font-size="15" fill="#12312b">Mark Asset</text>
-<text x="1720" y="854" text-anchor="middle" font-size="15" fill="#12312b">Beyond Repair</text>
-<ellipse cx="1720" cy="1045" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="1050" text-anchor="middle" font-size="15" fill="#12312b">Mark Asset Sold</text>
-<ellipse cx="1720" cy="1250" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="1255" text-anchor="middle" font-size="15" fill="#12312b">Maintain Room Details</text>
-<ellipse cx="1720" cy="1455" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="1720" y="1451" text-anchor="middle" font-size="15" fill="#12312b">Maintain</text>
-<text x="1720" y="1469" text-anchor="middle" font-size="15" fill="#12312b">Building Details</text>
-<ellipse cx="2230" cy="430" rx="178" ry="48" fill="#eef7f4" stroke="#13584c" stroke-width="1.8"/>
-<text x="2230" y="426" text-anchor="middle" font-size="15" fill="#12312b">Send Relocation</text>
-<text x="2230" y="444" text-anchor="middle" font-size="15" fill="#12312b">Update</text>
-<ellipse cx="2230" cy="635" rx="178" ry="48" fill="#eef7f4" stroke="#13584c" stroke-width="1.8"/>
-<text x="2230" y="640" text-anchor="middle" font-size="15" fill="#12312b">Print Barcode Label</text>
-<ellipse cx="2230" cy="840" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="2230" y="836" text-anchor="middle" font-size="15" fill="#12312b">Generate</text>
-<text x="2230" y="854" text-anchor="middle" font-size="15" fill="#12312b">FMO Asset Report</text>
-<ellipse cx="2230" cy="1045" rx="178" ry="48" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
-<text x="2230" y="1050" text-anchor="middle" font-size="15" fill="#12312b">Register Floor Drawing</text>
-<ellipse cx="2230" cy="1250" rx="178" ry="48" fill="#eef7f4" stroke="#13584c" stroke-width="1.8"/>
-<text x="2230" y="1255" text-anchor="middle" font-size="15" fill="#12312b">Retrieve Floor Area</text>
-<line x1="150" y1="720" x2="700" y2="430" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="720" x2="700" y2="635" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="720" x2="700" y2="840" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="720" x2="700" y2="1045" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="720" x2="700" y2="1250" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="720" x2="700" y2="1455" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1210" y2="430" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1210" y2="635" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1210" y2="840" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1210" y2="1045" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="430" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="635" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="840" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="1045" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="1250" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="1720" y2="1455" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="2230" y2="840" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="150" y1="1380" x2="2230" y2="1045" stroke="#5b6b66" stroke-width="1.4"/>
-<line x1="2800" y1="900" x2="2230" y2="430" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="2800" y1="900" x2="1720" y2="1250" stroke="#1f2a2e" stroke-width="1.4"/>
-<line x1="700" y1="1045" x2="1210" y2="1250" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/>
-<line x1="700" y1="1455" x2="1210" y2="1250" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/>
-<line x1="700" y1="382" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="700" y1="587" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="700" y1="792" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="700" y1="997" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="700" y1="1202" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="700" y1="1407" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1210" y1="382" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1210" y1="587" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1210" y1="792" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1210" y1="997" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="382" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="587" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="792" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="997" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="1202" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="1720" y1="1407" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="2230" y1="792" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<line x1="2230" y1="997" x2="1420" y2="238" stroke="#c39ccb" stroke-width="1.0" stroke-dasharray="7 6" marker-end="url(#op)" opacity="0.85"/>
-<text x="1420" y="260" text-anchor="middle" font-size="13" font-style="italic" fill="#9a5aa8">every use case &#171;include&#187; Log In</text>
-<line x1="1210" y1="430" x2="2230" y2="430" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="1720.0" y="426.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
-<line x1="1210" y1="635" x2="2230" y2="430" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="1720.0" y="528.5" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
-<line x1="1210" y1="840" x2="2230" y2="430" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="1720.0" y="631.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
-<line x1="700" y1="430" x2="2230" y2="1250" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="1465.0" y="836.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
-<line x1="2230" y1="1045" x2="2230" y2="1250" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="2230.0" y="1143.5" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
-<line x1="2230" y1="635" x2="1720" y2="430" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
-<text x="1975.0" y="528.5" text-anchor="middle" font-size="12.5" font-style="italic" fill="#9a5aa8">&#171;extend&#187;</text>
-<rect x="460" y="1560" width="620" height="180" rx="6" fill="#f7fbf9" stroke="#d7ddda"/>
-<text x="476" y="1586" font-size="15" font-weight="700" fill="#13584c">Notation</text>
-<line x1="480" y1="1610" x2="536" y2="1610" stroke="#1f2a2e" stroke-width="1.4"/><text x="550" y="1614" font-size="13" fill="#12312b">association</text>
-<line x1="480" y1="1640" x2="532" y2="1640" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/><text x="550" y="1644" font-size="13" fill="#12312b">&#171;include&#187; / &#171;extend&#187; (dependency)</text>
-<line x1="480" y1="1670" x2="530" y2="1670" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/><text x="550" y="1674" font-size="13" fill="#12312b">generalisation - actors and use cases</text>
-<ellipse cx="504" cy="1702" rx="27" ry="12" fill="#eef0ef" stroke="#13584c" stroke-width="1.6"/><text x="550" y="1706" font-size="13" fill="#12312b">abstract use case (Cancel Request)</text>
-<text x="476" y="1732" font-size="12" fill="#5b6b66">FMO Staff Member inherits every Staff Member use case via generalisation.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 2460" font-family="Barlow, Segoe UI, Arial, sans-serif">
+<rect width="2160" height="2460" fill="#fff"/>
+<defs><marker id="op" markerWidth="13" markerHeight="12" refX="10" refY="4.5" orient="auto"><path d="M1,1 L10,4.5 L1,8" fill="none" stroke="#9a5aa8" stroke-width="1.8"/></marker><marker id="tr" markerWidth="20" markerHeight="18" refX="17" refY="9" orient="auto"><path d="M1,1 L17,9 L1,17 Z" fill="#fff" stroke="#1f2a2e" stroke-width="1.7"/></marker></defs>
+<text x="1080.0" y="42" text-anchor="middle" font-size="27" font-weight="700" fill="#13584c">Use Case Diagram - FMIS</text>
+<text x="1080.0" y="70" text-anchor="middle" font-size="14.5" fill="#5b6b66">Facilities Management Information System  |  CSI1241 Systems Analysis - Group A</text>
+<rect x="340" y="96" width="1400" height="1994" fill="none" stroke="#1f2a2e" stroke-width="2"/>
+<text x="1040.0" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2a2e">FMIS</text>
+<g stroke="#1f2a2e" stroke-width="2.4" fill="none"><circle cx="150" cy="618" r="15" fill="#fff"/><line x1="150" y1="633" x2="150" y2="676"/><line x1="126" y1="648" x2="174" y2="648"/><line x1="150" y1="676" x2="130" y2="708"/><line x1="150" y1="676" x2="170" y2="708"/></g>
+<text x="150" y="732" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2a2e">Staff Member</text>
+<g stroke="#1f2a2e" stroke-width="2.4" fill="none"><circle cx="150" cy="1398" r="15" fill="#fff"/><line x1="150" y1="1413" x2="150" y2="1456"/><line x1="126" y1="1428" x2="174" y2="1428"/><line x1="150" y1="1456" x2="130" y2="1488"/><line x1="150" y1="1456" x2="170" y2="1488"/></g>
+<text x="150" y="1512" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2a2e">FMO Staff Member</text>
+<text x="1830" y="1196" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6b66">&#171;external system&#187;</text>
+<g stroke="#1f2a2e" stroke-width="2.4" fill="none"><circle cx="1830" cy="1218" r="15" fill="#fff"/><line x1="1830" y1="1233" x2="1830" y2="1276"/><line x1="1806" y1="1248" x2="1854" y2="1248"/><line x1="1830" y1="1276" x2="1810" y2="1308"/><line x1="1830" y1="1276" x2="1850" y2="1308"/></g>
+<text x="1830" y="1332" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2a2e">HR System</text>
+<line x1="150" y1="1374" x2="150" y2="724" stroke="#1f2a2e" stroke-width="2" marker-end="url(#tr)"/>
+<text x="166" y="1050.0" font-size="12.5" font-style="italic" fill="#5b6b66">generalises</text>
+<ellipse cx="940" cy="210" rx="176" ry="42" fill="#d4efe9" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="215" text-anchor="middle" font-size="14" fill="#12312b">Log In</text>
+<rect x="718" y="374" width="444" height="1538" rx="14" fill="#f4faf8" stroke="#13584c" stroke-width="1.6" stroke-dasharray="2 4"/>
+<text x="940" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#13584c">FMIS use cases</text>
+<text x="940" y="418" text-anchor="middle" font-size="11.5" font-style="italic" fill="#5b6b66">every use case in this frame requires sign-in</text>
+<ellipse cx="940" cy="500" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="505" text-anchor="middle" font-size="14" fill="#12312b">Request Office Move</text>
+<ellipse cx="940" cy="690" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="695" text-anchor="middle" font-size="14" fill="#12312b">Cancel Move Request</text>
+<ellipse cx="940" cy="880" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="885" text-anchor="middle" font-size="14" fill="#12312b">Log Maintenance Call</text>
+<ellipse cx="940" cy="1070" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="1066" text-anchor="middle" font-size="14" fill="#12312b">Cancel</text>
+<text x="940" y="1084" text-anchor="middle" font-size="14" fill="#12312b">Maintenance Call</text>
+<ellipse cx="940" cy="1260" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="1265" text-anchor="middle" font-size="14" fill="#12312b">Schedule Move</text>
+<ellipse cx="940" cy="1450" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="1455" text-anchor="middle" font-size="14" fill="#12312b">Enter Furniture Asset</text>
+<ellipse cx="940" cy="1640" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="1636" text-anchor="middle" font-size="14" fill="#12312b">Maintain Building</text>
+<text x="940" y="1654" text-anchor="middle" font-size="14" fill="#12312b">and Room Details</text>
+<ellipse cx="940" cy="1830" rx="176" ry="42" fill="#e6f1ee" stroke="#13584c" stroke-width="1.8"/>
+<text x="940" y="1826" text-anchor="middle" font-size="14" fill="#12312b">Generate</text>
+<text x="940" y="1844" text-anchor="middle" font-size="14" fill="#12312b">FMO Asset Report</text>
+<ellipse cx="1500" cy="880.0" rx="176" ry="42" fill="#eef0ef" stroke="#13584c" stroke-width="1.8"/>
+<text x="1500" y="885" text-anchor="middle" font-size="14" fill="#12312b">Cancel Request</text>
+<ellipse cx="1500" cy="1260.0" rx="176" ry="42" fill="#eef7f4" stroke="#13584c" stroke-width="1.8"/>
+<text x="1500" y="1256" text-anchor="middle" font-size="14" fill="#12312b">Send Relocation</text>
+<text x="1500" y="1274" text-anchor="middle" font-size="14" fill="#12312b">Update</text>
+<line x1="150" y1="660" x2="764" y2="500" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="660" x2="764" y2="690" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="660" x2="764" y2="880" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="660" x2="764" y2="1070" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="1440" x2="764" y2="1260" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="1440" x2="764" y2="1450" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="1440" x2="764" y2="1640" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="1440" x2="764" y2="1830" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="150" y1="660" x2="764" y2="210" stroke="#1f2a2e" stroke-width="1.4"/>
+<line x1="940" y1="374" x2="940" y2="252" stroke="#9a5aa8" stroke-width="1.6" stroke-dasharray="8 5" marker-end="url(#op)"/>
+<text x="954" y="317" font-size="13" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
+<line x1="1116" y1="690" x2="1324" y2="880.0" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/>
+<line x1="1116" y1="1070" x2="1324" y2="880.0" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/>
+<text x="1228" y="872.0" font-size="12" font-style="italic" fill="#5b6b66">generalises</text>
+<line x1="1116" y1="1260" x2="1324" y2="1260.0" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
+<text x="1220" y="1254" text-anchor="middle" font-size="11.5" font-style="italic" fill="#9a5aa8">&#171;include&#187;</text>
+<ellipse cx="1500" cy="1450" rx="176" ry="42" fill="#eef7f4" stroke="#13584c" stroke-width="1.8"/>
+<text x="1500" y="1446" text-anchor="middle" font-size="14" fill="#12312b">Print Asset</text>
+<text x="1500" y="1464" text-anchor="middle" font-size="14" fill="#12312b">Label</text>
+<line x1="1324" y1="1450" x2="1116" y2="1450" stroke="#9a5aa8" stroke-width="1.4" stroke-dasharray="8 5" marker-end="url(#op)"/>
+<text x="1220" y="1442" text-anchor="middle" font-size="11.5" font-style="italic" fill="#9a5aa8">&#171;extend&#187;</text>
+<line x1="1798" y1="1260" x2="1676" y2="1260.0" stroke="#1f2a2e" stroke-width="1.4"/>
+<rect x="360" y="2160" width="900" height="196" rx="8" fill="#f7fbf9" stroke="#d7ddda"/>
+<text x="378" y="2186" font-size="14.5" font-weight="700" fill="#13584c">Notation</text>
+<line x1="382" y1="2210" x2="442" y2="2210" stroke="#1f2a2e" stroke-width="1.4"/><text x="458" y="2214" font-size="13" fill="#12312b">association</text>
+<line x1="382" y1="2238" x2="438" y2="2238" stroke="#9a5aa8" stroke-width="1.5" stroke-dasharray="8 5" marker-end="url(#op)"/><text x="458" y="2242" font-size="13" fill="#12312b">&#171;include&#187; / &#171;extend&#187; dependency</text>
+<line x1="382" y1="2266" x2="436" y2="2266" stroke="#1f2a2e" stroke-width="1.6" marker-end="url(#tr)"/><text x="458" y="2270" font-size="13" fill="#12312b">generalisation - actors and use cases</text>
+<rect x="382" y="2286" width="56" height="20" rx="6" fill="#f4faf8" stroke="#13584c" stroke-width="1.4" stroke-dasharray="2 4"/><text x="458" y="2300" font-size="13" fill="#12312b">group frame (use cases that require sign-in)</text>
+<ellipse cx="410" cy="2328" rx="28" ry="12" fill="#eef0ef" stroke="#13584c" stroke-width="1.5"/><text x="458" y="2332" font-size="13" fill="#12312b">abstract use case (Cancel Request)</text>
 </svg>

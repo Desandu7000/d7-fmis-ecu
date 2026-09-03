@@ -1,15 +1,15 @@
 /* FMIS - Facilities Management Information System
-   Demo UI for CSI1241 Systems Analysis group assignment (ECU).
+   Demo UI for CSI1241 Systems Analysis group assignment.
    Navigation map / UI design exercise only - no backend.
-   Colours taken from the ECU brand palette (teal, plum, ecru, black). */
+   Colour palette: teal, plum, ecru, black. */
 
 :root {
-  --ecu-ink: #1a1a1a;
-  --ecu-teal: #25b197;
-  --ecu-teal-700: #197665;
-  --ecu-teal-900: #0d3b32;
-  --ecu-plum: #af1d75;
-  --ecu-plum-700: #76134f;
+  --brand-ink: #1a1a1a;
+  --brand-teal: #25b197;
+  --brand-teal-700: #197665;
+  --brand-teal-900: #0d3b32;
+  --brand-plum: #af1d75;
+  --brand-plum-700: #76134f;
   --heading: #13584c;
   --ink: #1f2422;
   --ink-soft: #575a5b;
@@ -35,7 +35,7 @@ body {
   background: var(--bg);
 }
 
-a { color: var(--ecu-teal-700); }
+a { color: var(--brand-teal-700); }
 
 h1, h2, h3 { color: var(--heading); line-height: 1.25; margin: 0 0 0.5em; }
 h1 { font-size: 1.6rem; }
@@ -45,8 +45,8 @@ h3 { font-size: 1rem; }
 /* ---------- Top bar ---------- */
 .topbar {
   background: #ffffff;
-  color: var(--ecu-ink);
-  border-bottom: 3px solid var(--ecu-teal);
+  color: var(--brand-ink);
+  border-bottom: 3px solid var(--brand-teal);
 }
 .topbar-inner {
   max-width: 1080px;
@@ -61,7 +61,7 @@ h3 { font-size: 1rem; }
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--ecu-ink);
+  color: var(--brand-ink);
   text-decoration: none;
 }
 .brand img.logo {
@@ -88,11 +88,11 @@ h3 { font-size: 1rem; }
   color: var(--ink-soft);
   text-align: right;
 }
-.topbar .who a { color: var(--ecu-teal-700); }
+.topbar .who a { color: var(--brand-teal-700); }
 
 /* ---------- Main nav ---------- */
 .mainnav {
-  background: var(--ecu-teal-700);
+  background: var(--brand-teal-700);
 }
 .mainnav-inner {
   max-width: 1080px;
@@ -177,9 +177,9 @@ input:focus, select:focus, textarea:focus {
 
 .btn {
   display: inline-block;
-  background: var(--ecu-plum);
+  background: var(--brand-plum);
   color: #fff;
-  border: 1px solid var(--ecu-plum);
+  border: 1px solid var(--brand-plum);
   padding: 9px 18px;
   font: inherit;
   font-weight: 600;
@@ -187,11 +187,11 @@ input:focus, select:focus, textarea:focus {
   cursor: pointer;
   text-decoration: none;
 }
-.btn:hover { background: var(--ecu-plum-700); border-color: var(--ecu-plum-700); }
+.btn:hover { background: var(--brand-plum-700); border-color: var(--brand-plum-700); }
 .btn.secondary {
   background: #fff;
-  color: var(--ecu-teal-700);
-  border-color: var(--ecu-teal-700);
+  color: var(--brand-teal-700);
+  border-color: var(--brand-teal-700);
 }
 .btn.secondary:hover { background: var(--panel-alt); }
 .btn.danger {
@@ -218,7 +218,7 @@ table.data th, table.data td {
 }
 table.data th {
   background: var(--panel-alt);
-  color: var(--ecu-teal-900);
+  color: var(--brand-teal-900);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -236,8 +236,8 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
   border: 1px solid transparent;
 }
 .pill.requested { background: #eceeed; color: var(--ink-soft); border-color: var(--line); }
-.pill.scheduled { background: #d9f2ed; color: var(--ecu-teal-700); border-color: #92d8cb; }
-.pill.cancelled { background: #f2d9e8; color: var(--ecu-plum-700); border-color: #e4b4d1; }
+.pill.scheduled { background: #d9f2ed; color: var(--brand-teal-700); border-color: #92d8cb; }
+.pill.cancelled { background: #f2d9e8; color: var(--brand-plum-700); border-color: #e4b4d1; }
 
 /* ---------- Cards ---------- */
 .card {
@@ -249,7 +249,7 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
   text-decoration: none;
   color: var(--ink);
 }
-.card:hover { border-color: var(--ecu-teal); }
+.card:hover { border-color: var(--brand-teal); }
 .card h3 { margin: 0 0 6px; }
 .card p { margin: 0; font-size: 0.88rem; color: var(--ink-soft); }
 .card .tag {
@@ -257,7 +257,7 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
   margin-top: 10px;
   font-size: 0.74rem;
   font-weight: 600;
-  color: var(--ecu-teal-900);
+  color: var(--brand-teal-900);
   background: var(--panel-alt);
   padding: 2px 8px;
   border-radius: 4px;
@@ -272,7 +272,7 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
 }
 .report-title {
   text-align: center;
-  border-bottom: 2px solid var(--ecu-teal);
+  border-bottom: 2px solid var(--brand-teal);
   padding-bottom: 8px;
   margin-bottom: 16px;
 }
@@ -296,7 +296,7 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
 .room-total { text-align: right; font-weight: 700; margin-top: 6px; }
 .report-totals {
   margin-top: 24px;
-  border-top: 2px solid var(--ecu-teal);
+  border-top: 2px solid var(--brand-teal);
   padding-top: 12px;
   font-family: "Consolas", "Courier New", monospace;
   font-size: 0.9rem;
@@ -306,7 +306,7 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
 /* ---------- Misc ---------- */
 .note {
   background: #eaf5f2;
-  border-left: 4px solid var(--ecu-teal);
+  border-left: 4px solid var(--brand-teal);
   padding: 10px 14px;
   font-size: 0.88rem;
   margin: 14px 0;
@@ -338,10 +338,10 @@ table.data tfoot td { font-weight: 700; background: #f4faf8; }
   max-width: 380px;
   background: #fff;
   border: 1px solid var(--line);
-  border-top: 4px solid var(--ecu-teal);
+  border-top: 4px solid var(--brand-teal);
   border-radius: 8px;
   padding: 28px;
 }
 .login-card .brand { margin-bottom: 4px; }
-.login-card .brand .brand-text { color: var(--ecu-ink); }
+.login-card .brand .brand-text { color: var(--brand-ink); }
 .login-card .brand .brand-text small { color: var(--ink-soft); }

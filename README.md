@@ -1,7 +1,7 @@
 # FMIS - Facilities Management Information System (demo UI)
 
 Static multi-page website built for the **CSI1241 Systems Analysis** group assignment
-(Facilities Management Information System case study, Edith Cowan University).
+(Facilities Management Information System case study).
 
 This is a **navigation map / UI design exercise only**. There is no backend, no data is
 stored, and buttons that would change data are placeholders.

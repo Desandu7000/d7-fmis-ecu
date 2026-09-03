@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1470" font-family="Barlow, Segoe UI, Arial, sans-serif">
+<rect width="1560" height="1470" fill="#fff"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3.2" orient="auto"><path d="M0,0 L8,3.2 L0,6.4 Z" fill="#13584c"/></marker></defs>
+<style>text{fill:#1f2422}.st{fill:#e6f1ee;stroke:#13584c;stroke-width:1.8}.ev{fill:#fff;stroke:#13584c;stroke-width:1.8}.co{fill:#fff;stroke:#13584c;stroke-width:1.8}.sg{fill:#e6f1ee;stroke:#7fa79c;stroke-width:1.4}.bl{fill:rgba(37,177,151,0.07);stroke:#13584c;stroke-width:1.5;stroke-dasharray:2 3}.id{font-weight:700;font-size:12px;fill:#13584c}.lb{font-size:12px}.bt{font-size:11px;font-weight:700;fill:#13584c}.ln{stroke:#13584c;stroke-width:1.7;fill:none}.gd{font-size:10.5px;fill:#af1d75;font-style:italic;font-weight:600}.nt{font-size:10px;fill:#575a5b}</style>
+<text x="30" y="26" style="font-size:16px;font-weight:700;fill:#13584c">Business Rules Diagram - Enter Furniture Asset</text>
+<text x="30" y="44" style="font-size:11px;fill:#575a5b">CSI1241 Systems Analysis - Group A. Notation: Business Rules Diagram lecture (state, event, condition, signal, Harel blob).</text>
+<text x="30" y="86" class="bt">Stage 1 - access control</text>
+<path class="sg" d="M30,150 H180 L196,170 L180,190 H30 Z"/>
+<text class="id" x="40" y="166">T1</text>
+<text class="lb" x="40" y="182">FMO staff select</text>
+<text class="lb" x="40" y="195">"enter furniture</text>
+<text class="lb" x="40" y="208">assets"</text>
+<rect class="bl" x="240" y="96" width="470" height="250" rx="18"/>
+<text class="bt" x="256" y="116">Harel blob - access check</text>
+<circle cx="286" cy="180" r="7" fill="#13584c"/><text class="nt" x="266" y="208">form not open</text>
+<polygon class="co" points="430,123 530,165 430,207 330,165"/>
+<text class="id" x="414" y="143">C1</text>
+<text class="lb" x="430" y="161" text-anchor="middle">FMO staff</text>
+<text class="lb" x="430" y="174" text-anchor="middle">logged in?</text>
+<polygon class="co" points="590,208 690,250 590,292 490,250"/>
+<text class="id" x="574" y="228">C2</text>
+<text class="lb" x="590" y="246" text-anchor="middle">Higher admin</text>
+<text class="lb" x="590" y="259" text-anchor="middle">level?</text>
+<path class="ln" d="M196,170 H330" marker-end="url(#ar)"/>
+<path class="ln" d="M430,207 Q460,250 490,250" marker-end="url(#ar)"/>
+<path class="ln" d="M690,250 H760" marker-end="url(#ar)"/>
+<text class="gd" x="700" y="242">C1 &amp; C2</text>
+<rect class="ev" x="762" y="224" width="150" height="44" rx="4"/>
+<text class="id" x="772" y="242">E1</text>
+<text class="lb" x="772" y="258">Grant access</text>
+<path class="ln" d="M912,248 H980" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1080" cy="248" rx="82" ry="40"/>
+<text class="id" x="1008" y="234">S4</text>
+<text class="lb" x="1080" y="252" text-anchor="middle">Grant access</text>
+<path class="ln" d="M1162,248 H1230" marker-end="url(#ar)"/>
+<path class="sg" d="M1234,228 H1384 L1400,248 L1384,268 H1234 Z"/>
+<text class="id" x="1244" y="244">M3</text>
+<text class="lb" x="1244" y="260">Fill the furniture</text>
+<text class="lb" x="1244" y="273">assets form</text>
+<path class="ln" d="M530,250 Q470,330 500,360 H540 V378" marker-end="url(#ar)"/>
+<rect class="ev" x="700" y="380" width="150" height="44" rx="4"/>
+<text class="id" x="710" y="398">E2</text>
+<text class="lb" x="710" y="414">Deny access</text>
+<text class="gd" x="560" y="392">C1 &amp; !C2</text>
+<path class="ln" d="M576,392 H700" marker-end="url(#ar)"/>
+<path class="ln" d="M850,404 H980" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1080" cy="404" rx="82" ry="40"/>
+<text class="id" x="1008" y="390">S3</text>
+<text class="lb" x="1080" y="408" text-anchor="middle">Deny access</text>
+<path class="ln" d="M1162,404 H1230" marker-end="url(#ar)"/>
+<path class="sg" d="M1234,384 H1384 L1400,404 L1384,424 H1234 Z"/>
+<text class="id" x="1244" y="400">M2</text>
+<text class="lb" x="1244" y="416">Need higher admin</text>
+<text class="lb" x="1244" y="429">access</text>
+<path class="ln" d="M400,200 Q360,470 430,500 H540" marker-end="url(#ar)"/>
+<text class="gd" x="360" y="470">!C1</text>
+<rect class="ev" x="700" y="500" width="150" height="44" rx="4"/>
+<text class="id" x="710" y="518">E2</text>
+<text class="lb" x="710" y="534">Deny access</text>
+<path class="ln" d="M540,522 H700" marker-end="url(#ar)"/>
+<path class="ln" d="M850,524 H980" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1080" cy="524" rx="82" ry="40"/>
+<text class="id" x="1008" y="510">S2</text>
+<text class="lb" x="1080" y="521" text-anchor="middle">Unauthorized</text>
+<text class="lb" x="1080" y="535" text-anchor="middle">user</text>
+<path class="ln" d="M1162,524 H1230" marker-end="url(#ar)"/>
+<path class="sg" d="M1234,504 H1384 L1400,524 L1384,544 H1234 Z"/>
+<text class="id" x="1244" y="520">M1</text>
+<text class="lb" x="1244" y="536">Unauthorized</text>
+<text class="lb" x="1244" y="549">access</text>
+<text x="30" y="636" class="bt">Stage 2 - detail validation</text>
+<path class="ln" d="M1080,288 V300 Q1080,330 1040,330 H300 Q40,330 40,470 V700" marker-end="url(#ar)"/>
+<path class="sg" d="M30,700 H180 L196,720 L180,740 H30 Z"/>
+<text class="id" x="40" y="716">T2</text>
+<text class="lb" x="40" y="732">FMO staff enter</text>
+<text class="lb" x="40" y="745">furniture asset</text>
+<text class="lb" x="40" y="758">details</text>
+<rect class="bl" x="240" y="650" width="560" height="210" rx="18"/>
+<text class="bt" x="256" y="670">Harel blob - validation check</text>
+<circle cx="286" cy="740" r="7" fill="#13584c"/><text class="nt" x="250" y="768">S4 grant access</text>
+<polygon class="co" points="410,688 510,730 410,772 310,730"/>
+<text class="id" x="394" y="708">C3</text>
+<text class="lb" x="410" y="726" text-anchor="middle">Details</text>
+<text class="lb" x="410" y="739" text-anchor="middle">correct?</text>
+<polygon class="co" points="560,688 660,730 560,772 460,730"/>
+<text class="id" x="544" y="708">C4</text>
+<text class="lb" x="560" y="726" text-anchor="middle">Building &amp; room</text>
+<text class="lb" x="560" y="739" text-anchor="middle">exist?</text>
+<polygon class="co" points="710,688 810,730 710,772 610,730"/>
+<text class="id" x="694" y="708">C5</text>
+<text class="lb" x="710" y="726" text-anchor="middle">All details</text>
+<text class="lb" x="710" y="739" text-anchor="middle">completed?</text>
+<path class="ln" d="M196,720 H310" marker-end="url(#ar)"/>
+<path class="ln" d="M800,720 H870" marker-end="url(#ar)"/>
+<text class="gd" x="806" y="712">C3 &amp; C4 &amp; C5</text>
+<rect class="ev" x="872" y="694" width="150" height="44" rx="4"/>
+<text class="id" x="882" y="712">E6</text>
+<text class="lb" x="882" y="728">Validate details</text>
+<path class="ln" d="M1022,718 H1090" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1180" cy="718" rx="82" ry="40"/>
+<text class="id" x="1108" y="704">S6</text>
+<text class="lb" x="1180" y="715" text-anchor="middle">Valid</text>
+<text class="lb" x="1180" y="729" text-anchor="middle">information</text>
+<path class="ln" d="M1262,718 H1320" marker-end="url(#ar)"/>
+<path class="sg" d="M1324,698 H1474 L1490,718 L1474,738 H1324 Z"/>
+<text class="id" x="1334" y="714">M4</text>
+<text class="lb" x="1334" y="730">Details valid</text>
+<path class="ln" d="M710,772 Q740,840 800,840 H870" marker-end="url(#ar)"/>
+<text class="gd" x="726" y="836">!(C3 &amp; C4 &amp; C5)</text>
+<rect class="ev" x="872" y="812" width="150" height="44" rx="4"/>
+<text class="id" x="882" y="830">E7</text>
+<text class="lb" x="882" y="846">Reject details</text>
+<path class="ln" d="M1022,838 H1090" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1180" cy="838" rx="82" ry="40"/>
+<text class="id" x="1108" y="824">S7</text>
+<text class="lb" x="1180" y="835" text-anchor="middle">Invalid</text>
+<text class="lb" x="1180" y="849" text-anchor="middle">information</text>
+<path class="ln" d="M1262,838 H1320" marker-end="url(#ar)"/>
+<path class="sg" d="M1324,818 H1474 L1490,838 L1474,858 H1324 Z"/>
+<text class="id" x="1334" y="834">M5</text>
+<text class="lb" x="1334" y="850">Details invalid</text>
+<text x="30" y="960" class="bt">Stage 3 - duplicate check and save</text>
+<path class="ln" d="M1180,758 V775 Q1180,800 1140,800 H300 Q40,800 40,900 V1010" marker-end="url(#ar)"/>
+<path class="sg" d="M30,1010 H180 L196,1030 L180,1050 H30 Z"/>
+<text class="id" x="40" y="1026">T3</text>
+<text class="lb" x="40" y="1042">FMO staff submit</text>
+<text class="lb" x="40" y="1055">details</text>
+<rect class="bl" x="240" y="975" width="470" height="200" rx="18"/>
+<text class="bt" x="256" y="995">Harel blob - duplicate check</text>
+<circle cx="286" cy="1060" r="7" fill="#13584c"/><text class="nt" x="250" y="1088">S6 valid information</text>
+<polygon class="co" points="430,1008 530,1050 430,1092 330,1050"/>
+<text class="id" x="414" y="1028">C6</text>
+<text class="lb" x="430" y="1046" text-anchor="middle">Asset ID</text>
+<text class="lb" x="430" y="1059" text-anchor="middle">exists?</text>
+<polygon class="co" points="590,1078 690,1120 590,1162 490,1120"/>
+<text class="id" x="574" y="1098">C7</text>
+<text class="lb" x="590" y="1116" text-anchor="middle">Details</text>
+<text class="lb" x="590" y="1129" text-anchor="middle">exist?</text>
+<path class="ln" d="M196,1030 H330" marker-end="url(#ar)"/>
+<path class="ln" d="M690,1120 H760" marker-end="url(#ar)"/>
+<text class="gd" x="694" y="1112">!C6 &amp; !C7</text>
+<rect class="ev" x="762" y="1050" width="150" height="58" rx="4"/>
+<text class="id" x="772" y="1068">E3</text>
+<text class="lb" x="772" y="1084">Save the data</text>
+<text class="lb" x="772" y="1098">to database</text>
+<path class="ln" d="M912,1078 H980" marker-end="url(#ar)"/>
+<ellipse class="st" cx="1075" cy="1078" rx="82" ry="40"/>
+<text class="id" x="1003" y="1064">S6</text>
+<text class="lb" x="1075" y="1075" text-anchor="middle">Valid</text>
+<text class="lb" x="1075" y="1089" text-anchor="middle">information</text>
+<path class="ln" d="M1157,1068 H1200" marker-end="url(#ar)"/>
+<path class="sg" d="M1204,1048 H1332 L1348,1068 L1332,1088 H1204 Z"/>
+<text class="id" x="1214" y="1064">M6</text>
+<text class="lb" x="1214" y="1080">Save data</text>
+<text class="lb" x="1214" y="1093">successfully</text>
+<rect class="ev" x="1372" y="1052" width="150" height="58" rx="4"/>
+<text class="id" x="1382" y="1070">E5</text>
+<text class="lb" x="1382" y="1086">Finish the</text>
+<text class="lb" x="1382" y="1100">process</text>
+<path class="ln" d="M1348,1074 H1372" marker-end="url(#ar)"/>
+<path class="ln" d="M1447,1110 V1392" marker-end="url(#ar)"/>
+<path class="sg" d="M1372,1392 H1512 L1528,1412 L1512,1432 H1372 Z"/>
+<text class="id" x="1382" y="1408">M9</text>
+<text class="lb" x="1382" y="1424">Successfully</text>
+<text class="lb" x="1382" y="1437">ended</text>
+<path class="ln" d="M840,1096 Q860,1200 940,1200" marker-end="url(#ar)"/>
+<text class="gd" x="846" y="1210">database error</text>
+<ellipse class="st" cx="1030" cy="1210" rx="82" ry="40"/>
+<text class="id" x="958" y="1196">S8</text>
+<text class="lb" x="1030" y="1207" text-anchor="middle">Couldn't</text>
+<text class="lb" x="1030" y="1221" text-anchor="middle">save record</text>
+<path class="ln" d="M1112,1210 H1180" marker-end="url(#ar)"/>
+<path class="sg" d="M1184,1190 H1324 L1340,1210 L1324,1230 H1184 Z"/>
+<text class="id" x="1194" y="1206">M8</text>
+<text class="lb" x="1194" y="1222">Data cannot be</text>
+<text class="lb" x="1194" y="1235">saved, retry</text>
+<path class="ln" d="M520,1120 Q560,1280 640,1280" marker-end="url(#ar)"/>
+<text class="gd" x="470" y="1276">C6 | C7</text>
+<rect class="ev" x="642" y="1256" width="150" height="58" rx="4"/>
+<text class="id" x="652" y="1274">E4</text>
+<text class="lb" x="652" y="1290">Avoid saving</text>
+<text class="lb" x="652" y="1304">record</text>
+<path class="ln" d="M792,1282 H860" marker-end="url(#ar)"/>
+<ellipse class="st" cx="950" cy="1282" rx="82" ry="40"/>
+<text class="id" x="878" y="1268">S7</text>
+<text class="lb" x="950" y="1279" text-anchor="middle">Invalid</text>
+<text class="lb" x="950" y="1293" text-anchor="middle">information</text>
+<path class="ln" d="M1032,1282 H1090" marker-end="url(#ar)"/>
+<path class="sg" d="M1094,1262 H1234 L1250,1282 L1234,1302 H1094 Z"/>
+<text class="id" x="1104" y="1278">M7</text>
+<text class="lb" x="1104" y="1294">Data already</text>
+<text class="lb" x="1104" y="1307">exists</text>
+</svg>
