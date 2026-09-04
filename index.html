@@ -3,106 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FMIS - Facilities Management Information System</title>
+<title>Sign in - FMIS</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
+<div class="login-shell">
+  <div class="login-card">
     <a class="brand" href="index.html">
       <span class="brand-text">
         FMIS
         <small>Facilities Management Information System</small>
       </span>
     </a>
-    <div class="who"><a href="login.html">Log in</a></div>
-  </div>
-</header>
 
-<div class="wrap">
+    <h1>Staff sign in</h1>
+    <p style="color:var(--ink-soft);font-size:0.9rem;">
+      Sign in with your Kingsford University staff account to open the FMIS.
+    </p>
 
-  <div class="page-head">
-    <h1>Facilities Management Information System</h1>
-    <p>Internal system for the Kingsford University Facilities Management Office.</p>
-  </div>
-
-  <div class="grid-2">
-    <div class="panel">
-      <h2>About this system</h2>
-      <p>
-        The FMIS helps the University keep track of moveable furniture assets across
-        campus buildings. Staff use it to see building plans, request an office move,
-        change or delete a move request, and log a maintenance call.
-      </p>
-      <p>
-        Facilities Management Office (FMO) staff can also record and update furniture
-        assets, schedule and re-schedule moves, and generate an FMO asset report that
-        lists the occupants and furniture in each room of a floor.
-      </p>
-      <p>
-        Staff contact details are read from the University HR system. The actual furniture
-        move is carried out by an external removalist firm.
-      </p>
-    </div>
-
-    <div class="panel">
-      <h2>Sign in</h2>
-      <p>Use your Kingsford University staff username and password to sign in.</p>
-      <a class="btn" href="login.html">Go to log in</a>
-      <div class="note">
-        Any authenticated staff member can view building plans and manage their own
-        move requests. Some screens are only available to FMO staff.
+    <form action="dashboard.html" method="get" data-demo-skip>
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" value="jclause" autocomplete="username">
       </div>
-    </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" value="demo-password" autocomplete="current-password">
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">Sign in</button>
+      </div>
+      <p style="margin:12px 0 0;"><a href="#">Forgot your password?</a></p>
+    </form>
   </div>
-
-  <h2>Quick links</h2>
-  <div class="grid-3">
-    <a class="card" href="log-maintenance-call.html">
-      <h3>Log a maintenance call</h3>
-      <p>Report a room problem for the FMO to action, or cancel a call you logged.</p>
-      <span class="tag">Staff member</span>
-    </a>
-    <a class="card" href="report.html">
-      <h3>Generate FMO asset report</h3>
-      <p>Pick a building and floor, then view the room and furniture report.</p>
-      <span class="tag">FMO staff</span>
-    </a>
-    <a class="card" href="enter-asset.html">
-      <h3>Enter furniture asset</h3>
-      <p>Record a new desk, chair, filing cabinet or bookcase against a room.</p>
-      <span class="tag">FMO staff</span>
-    </a>
-    <a class="card" href="schedule-move.html">
-      <h3>Schedule move</h3>
-      <p>Review a submitted move request and set the move date.</p>
-      <span class="tag">FMO staff</span>
-    </a>
-    <a class="card" href="cancel-move.html">
-      <h3>Cancel move request</h3>
-      <p>View one of your own move requests and cancel it.</p>
-      <span class="tag">Staff member</span>
-    </a>
-    <a class="card" href="dashboard.html">
-      <h3>Staff dashboard</h3>
-      <p>All FMIS tasks in one place after you sign in.</p>
-      <span class="tag">All staff</span>
-    </a>
-  </div>
-
 </div>
 
-<footer class="footer">
-  <p class="footer-credit">Home page — Kingsford University Facilities Management Office.</p>
-  <p>Kingsford University &ndash; Facilities Management Office &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy &amp; cookie policy</a></p>
-  <p class="footer-note">Demo build for the CSI1241 Systems Analysis assignment. Not a live system &ndash; no data is stored.</p>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="report.html">FMO asset report</a></li>
+      <li><a href="log-maintenance-call.html">Log a maintenance call</a></li>
+      <li><a href="contact.html">Contact the FMO</a></li>
+      <li><a href="privacy.html">Privacy &amp; cookie policy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Kingsford University &middot; Facilities Management Office</p>
+    <p class="footer-disclaimer">FMIS is an internal staff system. This build is a prototype for the CSI1241 Systems Analysis assignment &ndash; demonstration only, no data is stored.</p>
+  </div>
 </footer>
 
 <script src="js/app.js"></script>

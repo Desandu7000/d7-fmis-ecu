@@ -337,17 +337,30 @@ table.data tfoot td { font-weight: 700; background: #eeeeee; }
 .definition-list { display: grid; grid-template-columns: 180px 1fr; row-gap: 6px; font-size: 0.9rem; }
 .definition-list dt { font-weight: 700; color: var(--ink-soft); }
 .definition-list dd { margin: 0; }
-.footer {
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+  margin-top: 44px;
+}
+.footer-inner {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 16px 15px 26px;
+  padding: 18px 15px 24px;
   color: var(--ink-soft);
-  font-size: 0.76rem;
-  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
 }
-.footer p { margin: 3px 0; }
-.footer-credit { color: var(--ink); }
-.footer-note { color: #888; }
+.footer-nav {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+.footer-nav a { color: var(--primary); }
+.footer-copy { margin: 0 0 3px; }
+.footer-disclaimer { margin: 0; color: #8a8a8a; font-size: 0.74rem; }
 
 /* ---------- Login ---------- */
 .login-shell {
