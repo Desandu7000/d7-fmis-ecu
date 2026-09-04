@@ -1,5 +1,5 @@
 /* FMIS demo - light front-end helpers only.
-   This is a UI design exercise, so nothing is saved and buttons are placeholders. */
+   UI design exercise for CSI1241 - no backend, buttons are placeholders. */
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('form[data-demo]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var msg = form.getAttribute('data-demo-message') || 'Saved. This is a demo screen, so no data is stored.';
+      var msg = form.getAttribute('data-demo-message') || 'Saved.';
       var box = form.querySelector('.demo-result');
       if (box) { box.textContent = msg; box.hidden = false; }
     });
