@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Log a maintenance call - FMIS</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -16,29 +13,31 @@
 
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="dashboard.html">
+    <a class="brand" href="home.html">
       <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
     </a>
     <div class="who">
-      Signed in as <strong>Desandu Hettiarachchi</strong><br>
-      Role: FMO staff member &nbsp;|&nbsp; <a href="index.html">Log out</a>
+      Signed in as <strong>Jeff Clause</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="logout.html">Log out</a>
     </div>
   </div>
 </header>
 <nav class="mainnav">
   <div class="mainnav-inner">
+    <a href="home.html">Home</a>
     <a href="dashboard.html">Dashboard</a>
-    <a href="log-maintenance-call.html">Log maintenance call</a>
-    <a href="report.html">FMO asset report</a>
-    <a href="enter-asset.html">Enter furniture asset</a>
-    <a href="schedule-move.html">Schedule move</a>
-    <a href="cancel-move.html">Cancel move request</a>
+    <a href="maintenance.html" class="active">Maintenance Call</a>
+    <a href="furniture.html">Furniture Assets</a>
+    <a href="moves.html">Move Management</a>
+    <a href="maps.html">Maps</a>
+    <a href="fmo-portal.html">FMO staff</a>
+    <a href="logout.html">Logout</a>
   </div>
 </nav>
 
 <div class="wrap">
-  <div class="crumbs"><a href="dashboard.html">Dashboard</a> / Log a maintenance call</div>
-  <div class="page-head">
+  <div class="crumbs"><a href="home.html">FMIS Home</a> / <a href="maintenance.html">Maintenance Call</a> / Log a maintenance call</div>
+<div class="page-head">
     <h1>Log a maintenance call</h1>
     <p>Report a problem with a room so the Facilities Management Office can action it. Any signed-in staff member can log a call and can cancel a call they logged while it is still open.</p>
   </div>
@@ -128,16 +127,15 @@
       Call 008394 has been cancelled.
     </p>
   </div>
-
 </div>
 
 <footer class="site-footer">
   <div class="footer-inner">
     <ul class="footer-nav">
+      <li><a href="home.html">Home</a></li>
       <li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="report.html">FMO asset report</a></li>
-      <li><a href="log-maintenance-call.html">Log a maintenance call</a></li>
       <li><a href="contact.html">Contact the FMO</a></li>
+      <li><a href="user-guide.html">User guide</a></li>
       <li><a href="privacy.html">Privacy &amp; cookie policy</a></li>
     </ul>
     <p class="footer-copy">&copy; 2026 Kingsford University &middot; Facilities Management Office</p>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Access buildings and floor plans - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="home.html">
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Jeff Clause</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="logout.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="home.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="maintenance.html">Maintenance Call</a>
+    <a href="furniture.html">Furniture Assets</a>
+    <a href="moves.html">Move Management</a>
+    <a href="maps.html" class="active">Maps</a>
+    <a href="fmo-portal.html">FMO staff</a>
+    <a href="logout.html">Logout</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="home.html">FMIS Home</a> / <a href="maps.html">Maps</a> / Floor plans</div>
+  <div class="page-head">
+    <h1>Access buildings and floor plans</h1>
+    <p>View a building floor plan one floor at a time. Room sizes are shown in square metres.</p>
+  </div>
+  <div class="panel">
+    <form class="form-row" data-demo-skip>
+      <div class="field"><label for="bldg">Building</label><select id="bldg"><option>19 - Joondalup</option></select></div>
+      <div class="field"><label for="flr">Floor</label><select id="flr"><option>1</option></select></div>
+    </form>
+    <p><strong>Building 19, Floor 1</strong> &ndash; drawing JO_19_1.dwg</p>
+    <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;border:1px solid var(--line);background:#fff"><rect x="20" y="20" width="600" height="320" fill="none" stroke="#333" stroke-width="2"/><rect x="20" y="20" width="200" height="150" fill="#eef7f4" stroke="#333"/><text x="120" y="95" text-anchor="middle" font-size="13">129G &middot; Office</text><text x="120" y="115" text-anchor="middle" font-size="11" fill="#666">10 sqm</text><rect x="220" y="20" width="200" height="150" fill="#eef7f4" stroke="#333"/><text x="320" y="95" text-anchor="middle" font-size="13">129F &middot; Office</text><text x="320" y="115" text-anchor="middle" font-size="11" fill="#666">12 sqm</text><rect x="420" y="20" width="200" height="150" fill="#eef7f4" stroke="#333"/><text x="520" y="95" text-anchor="middle" font-size="13">129E &middot; Office</text><text x="520" y="115" text-anchor="middle" font-size="11" fill="#666">10 sqm</text><rect x="20" y="170" width="600" height="60" fill="#f2f2f2" stroke="#333"/><text x="320" y="205" text-anchor="middle" font-size="12" fill="#666">Corridor</text><rect x="20" y="230" width="300" height="110" fill="#eef7f4" stroke="#333"/><text x="170" y="290" text-anchor="middle" font-size="13">129D &middot; Laboratory</text><text x="170" y="308" text-anchor="middle" font-size="11" fill="#666">28 sqm</text><rect x="320" y="230" width="300" height="110" fill="#f9f9f9" stroke="#333"/><text x="470" y="290" text-anchor="middle" font-size="13" fill="#666">Non-usable floor area</text></svg>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-top:10px;">Floor plan rendered from the linked AutoCAD drawing. See <a href="floor-areas.html">Floor areas</a> for GFA and UFA.</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="contact.html">Contact the FMO</a></li>
+      <li><a href="user-guide.html">User guide</a></li>
+      <li><a href="privacy.html">Privacy &amp; cookie policy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Kingsford University &middot; Facilities Management Office</p>
+    <p class="footer-disclaimer">FMIS is an internal staff system. This build is a prototype for the CSI1241 Systems Analysis assignment &ndash; demonstration only, no data is stored.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

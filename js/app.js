@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Inline placeholder buttons: show a short confirmation near the button.
+  document.querySelectorAll('[data-demo-inline]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var scope = btn.closest('.panel') || btn.closest('form') || document.body;
+      var box = scope.querySelector('.demo-result');
+      if (box) { box.textContent = btn.getAttribute('data-demo-inline'); box.hidden = false; }
+    });
+  });
+
   // "Print label" placeholder.
   var printBtn = document.getElementById('print-label');
   if (printBtn) {

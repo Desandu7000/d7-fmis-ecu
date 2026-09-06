@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR database - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="home.html">
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Jeff Clause</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="logout.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="home.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="maintenance.html">Maintenance Call</a>
+    <a href="furniture.html">Furniture Assets</a>
+    <a href="moves.html">Move Management</a>
+    <a href="maps.html">Maps</a>
+    <a href="fmo-portal.html" class="active">FMO staff</a>
+    <a href="logout.html">Logout</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="home.html">FMIS Home</a> / <a href="fmo-portal.html">FMO staff</a> / HR database</div>
+  <div class="page-head">
+    <h1>HR database</h1>
+    <p>Staff contact details the FMIS reads from the University HR system. The FMIS does not manage or store these records (Out of Scope 3.3.2).</p>
+  </div>
+  <div class="panel">
+    <div class="table-scroll"><table class="data">
+      <thead><tr><th>Staff ID</th><th>Name</th><th>Department</th><th>Room</th><th>Phone</th></tr></thead>
+      <tbody>
+        <tr><td>74007597</td><td>Jeff Clause</td><td>Science</td><td>129G</td><td>(00) 0000 1201</td></tr>
+        <tr><td>74006939</td><td>Clem Clemons</td><td>Science</td><td>129F</td><td>(00) 0000 1202</td></tr>
+        <tr><td>74003639</td><td>Dana Reyes</td><td>Science</td><td>129E</td><td>(00) 0000 1203</td></tr>
+        <tr><td>74005695</td><td>Sam Ng</td><td>Engineering</td><td>205B</td><td>(00) 0000 1440</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-top:8px;">Read-only. The FMIS uses this data to record room occupants and to notify staff about their relocations.</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="contact.html">Contact the FMO</a></li>
+      <li><a href="user-guide.html">User guide</a></li>
+      <li><a href="privacy.html">Privacy &amp; cookie policy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Kingsford University &middot; Facilities Management Office</p>
+    <p class="footer-disclaimer">FMIS is an internal staff system. This build is a prototype for the CSI1241 Systems Analysis assignment &ndash; demonstration only, no data is stored.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

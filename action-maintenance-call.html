@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Action and cancel maintenance call - FMIS</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="home.html">
+      <span class="brand-text">FMIS<small>Facilities Management Information System</small></span>
+    </a>
+    <div class="who">
+      Signed in as <strong>Jeff Clause</strong><br>
+      Role: FMO staff member &nbsp;|&nbsp; <a href="logout.html">Log out</a>
+    </div>
+  </div>
+</header>
+<nav class="mainnav">
+  <div class="mainnav-inner">
+    <a href="home.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="maintenance.html" class="active">Maintenance Call</a>
+    <a href="furniture.html">Furniture Assets</a>
+    <a href="moves.html">Move Management</a>
+    <a href="maps.html">Maps</a>
+    <a href="fmo-portal.html">FMO staff</a>
+    <a href="logout.html">Logout</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs"><a href="home.html">FMIS Home</a> / <a href="maintenance.html">Maintenance Call</a> / Action and cancel</div>
+  <div class="page-head">
+    <h1>Action and cancel maintenance call</h1>
+    <p>FMO staff action or reject a logged call. The staff member who logged a call can cancel it while it is still Logged.</p>
+  </div>
+  <div class="panel">
+    <h2>Logged calls awaiting FMO action</h2>
+    <div class="table-scroll"><table class="data">
+      <thead><tr><th>Call ID</th><th>Room</th><th>Type</th><th>Logged by</th><th>Logged</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>008394</td><td>129G</td><td>Lighting to be replaced</td><td>74007597 Jeff Clause</td><td>02/09/2026</td>
+          <td class="btn-row"><button type="button" class="btn" data-demo-inline="Call 008394 set to Actioned.">Action</button> <button type="button" class="btn secondary" data-demo-inline="Call 008394 rejected.">Reject</button></td></tr>
+        <tr><td>008421</td><td>205B</td><td>Carpet to be cleaned</td><td>74006939 Praveen L.</td><td>03/09/2026</td>
+          <td class="btn-row"><button type="button" class="btn" data-demo-inline="Call 008421 set to Actioned.">Action</button> <button type="button" class="btn secondary" data-demo-inline="Call 008421 rejected.">Reject</button></td></tr>
+      </tbody>
+    </table></div>
+    <p class="demo-result note" hidden></p>
+  </div>
+  <div class="panel">
+    <h2>Cancel a call you logged</h2>
+    <p>You can only cancel a call while it is still Logged. Once the FMO has actioned it, it cannot be cancelled.</p>
+    <form data-demo data-demo-message="Call 008394 has been cancelled.">
+      <div class="field"><label for="cid">Call to cancel</label>
+        <select id="cid" name="cid"><option>008394 - 129G - Lighting to be replaced (Logged)</option></select></div>
+      <div class="btn-row"><button type="submit" class="btn danger">Cancel call</button>
+        <a class="btn secondary" href="my-maintenance-calls.html">Back</a></div>
+      <p class="demo-result note" hidden></p>
+    </form>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <ul class="footer-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="contact.html">Contact the FMO</a></li>
+      <li><a href="user-guide.html">User guide</a></li>
+      <li><a href="privacy.html">Privacy &amp; cookie policy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Kingsford University &middot; Facilities Management Office</p>
+    <p class="footer-disclaimer">FMIS is an internal staff system. This build is a prototype for the CSI1241 Systems Analysis assignment &ndash; demonstration only, no data is stored.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
